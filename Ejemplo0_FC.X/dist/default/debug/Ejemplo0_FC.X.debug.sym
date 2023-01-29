@@ -254,8 +254,8 @@ bssCOMRAM 501 543 COMRAM 501 1
 bssBANK5 560 57F BANK5 560 1
 text3 25EA 28D1 CODE 25EA 0
 %locals
-dist/default/production\Ejemplo0_FC.X.production.o
-C:\Users\HP\AppData\Local\Temp\xcAs121g.s
+dist/default/debug\Ejemplo0_FC.X.debug.o
+C:\Users\HP\AppData\Local\Temp\xcAsf0s.s
 375 2884 0 CODE 0
 377 2884 0 CODE 0
 380 2884 0 CODE 0

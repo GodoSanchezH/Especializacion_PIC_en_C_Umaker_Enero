@@ -8,7 +8,7 @@
   200040h - 2FFFFFh
   30000Ah - 30003Fh
   
- dist/default/production\Ejemplo0_FC.X.production.hex ranges:
+ dist/default/debug\Ejemplo0_FC.X.debug.hex ranges:
   0h - 3h
   2500h - 25E8h
   25EAh - 28D1h
@@ -27,7 +27,7 @@
   T = Trailing code
   & = Find & replace opcode
   X = Find & delete opcode
-  1 = dist/default/production\Ejemplo0_FC.X.production.hex
+  1 = dist/default/debug\Ejemplo0_FC.X.debug.hex
 00000000: 1111------------------------------------------------------------
 00002500: 1111111111111111111111111111111111111111111111111111111111111111
 00002540: 1111111111111111111111111111111111111111111111111111111111111111
