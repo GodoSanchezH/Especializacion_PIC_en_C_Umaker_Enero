@@ -15,6 +15,8 @@
 /*
  * 
  */
+void ejemplo1(void);
+
 int main(int argc, char** argv) {
 
     ConfigClock();
@@ -26,6 +28,17 @@ int main(int argc, char** argv) {
     SLRCONF |= (1<<3);//limit
     ODCONF &= ~(1<<3);//pushpull
     
+    
+    //Configuracion Button RB4
+    TRISB |= (1<<4); //definido como ENTRADA
+    ANSELB &= ~(1<<4);// pin digital
+    WPUB |= (1<<4);//pull-up ON
+    INLVLB &= ~(1<<4);//ttl
+    SLRCONB |= (1<<4);//limit
+    ODCONB &= ~(1<<4);//pushpull
+    
+    
+    
 //    101101001 -> (1<<0)
 //    000000001 -> ~
 //    111111110->&
@@ -35,10 +48,19 @@ int main(int argc, char** argv) {
     //TRISAbits.TRISA0 = 1; MEDIANTE ESTRUCTURAS
     for(;;){
     
-        LATF ^=(1<<3);
-        __delay_ms(200);
+        if (!(PORTB & (1<<4))) LATF &= ~(1<<3);
+        else LATF |=(1<<3); 
+
+        
+      
     }
     
     return (EXIT_SUCCESS);
+}
+
+void ejemplo1(void){
+  LATF ^=(1<<3);
+        __delay_ms(200);
+
 }
 

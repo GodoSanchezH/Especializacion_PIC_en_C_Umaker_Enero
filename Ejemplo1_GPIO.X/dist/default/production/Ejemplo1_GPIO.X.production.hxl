@@ -10,11 +10,11 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 3h		(dist/default/production\Ejemplo1_GPIO.X.production.hex)
-  1FFB4h - 1FFFFh		(dist/default/production\Ejemplo1_GPIO.X.production.hex)
+  1FFAEh - 1FFFFh		(dist/default/production\Ejemplo1_GPIO.X.production.hex)
   200000h - 20003Fh		(dist/default/production\Ejemplo1_GPIO.X.production.hex)
   300000h - 300009h		(dist/default/production\Ejemplo1_GPIO.X.production.hex)
  Unused ranges:
-  4h - 1FFB3h
+  4h - 1FFADh
   20000h - 1FFFFFh
   200040h - 2FFFFFh
 
@@ -27,7 +27,8 @@
 ----------------------------------------------------------
 00000000 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
-0001FFB0 | -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+0001FFA0 | -- -- -- -- -- -- -- -- -- -- -- -- -- -- H1 H1
+0001FFB0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 0001FFC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 0001FFD0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 0001FFE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

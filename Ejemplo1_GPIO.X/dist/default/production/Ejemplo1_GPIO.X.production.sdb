@@ -29,12 +29,22 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "64 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\Config.c
 [v _ConfigClock ConfigClock `(v  1 e 1 0 ]
-"18 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\main.c
+"20 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\main.c
 [v _main main `(i  1 e 2 0 ]
 "5210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
 "5448
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"39612
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"39674
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"39736
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"39798
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"39860
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
 "41149
 [v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
 "41211
@@ -47,12 +57,16 @@
 [v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
 "47792
 [v _LATF LATF `VEuc  1 e 1 @1219 ]
+"47916
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
 "48134
 [v _TRISF TRISF `VEuc  1 e 1 @1227 ]
-"18 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\main.c
+"48258
+[v _PORTB PORTB `VEuc  1 e 1 @1231 ]
+"20 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"43
+"59
 } 0
 "64 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\Config.c
 [v _ConfigClock ConfigClock `(v  1 e 1 0 ]

@@ -28772,6 +28772,8 @@ void ConfigClock(void);
 
 
 
+void ejemplo1(void);
+
 int main(int argc, char** argv) {
 
     ConfigClock();
@@ -28782,12 +28784,30 @@ int main(int argc, char** argv) {
     INLVLF &= ~(1<<3);
     SLRCONF |= (1<<3);
     ODCONF &= ~(1<<3);
-# 36 "main.c"
+
+
+
+    TRISB |= (1<<4);
+    ANSELB &= ~(1<<4);
+    WPUB |= (1<<4);
+    INLVLB &= ~(1<<4);
+    SLRCONB |= (1<<4);
+    ODCONB &= ~(1<<4);
+# 49 "main.c"
     for(;;){
 
-        LATF ^=(1<<3);
-        _delay((unsigned long)((200)*(64000000UL/4000.0)));
+        if (!(PORTB & (1<<4))) LATF &= ~(1<<3);
+        else LATF |=(1<<3);
+
+
+
     }
 
     return (0);
+}
+
+void ejemplo1(void){
+  LATF ^=(1<<3);
+        _delay((unsigned long)((200)*(64000000UL/4000.0)));
+
 }

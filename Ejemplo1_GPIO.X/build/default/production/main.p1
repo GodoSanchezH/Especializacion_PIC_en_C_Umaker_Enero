@@ -21,6 +21,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 "41273
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 41273: extern volatile unsigned char ODCONF __attribute__((address(0x42A)));
 [v _ODCONF `Vuc ~T0 @X0 0 e@1066 ]
+"47916
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 47916: extern volatile unsigned char TRISB __attribute__((address(0x4C7)));
+[v _TRISB `Vuc ~T0 @X0 0 e@1223 ]
+"39612
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 39612: extern volatile unsigned char ANSELB __attribute__((address(0x408)));
+[v _ANSELB `Vuc ~T0 @X0 0 e@1032 ]
+"39674
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 39674: extern volatile unsigned char WPUB __attribute__((address(0x409)));
+[v _WPUB `Vuc ~T0 @X0 0 e@1033 ]
+"39860
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 39860: extern volatile unsigned char INLVLB __attribute__((address(0x40C)));
+[v _INLVLB `Vuc ~T0 @X0 0 e@1036 ]
+"39798
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 39798: extern volatile unsigned char SLRCONB __attribute__((address(0x40B)));
+[v _SLRCONB `Vuc ~T0 @X0 0 e@1035 ]
+"39736
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 39736: extern volatile unsigned char ODCONB __attribute__((address(0x40A)));
+[v _ODCONB `Vuc ~T0 @X0 0 e@1034 ]
+"48258
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 48258: extern volatile unsigned char PORTB __attribute__((address(0x4CF)));
+[v _PORTB `Vuc ~T0 @X0 0 e@1231 ]
 "47792
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 47792: extern volatile unsigned char LATF __attribute__((address(0x4C3)));
 [v _LATF `Vuc ~T0 @X0 0 e@1219 ]
@@ -2582,57 +2603,95 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 49822: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"18 main.c
-[; ;main.c: 18: int main(int argc, char** argv) {
+"20 main.c
+[; ;main.c: 20: int main(int argc, char** argv) {
 [v _main `(i ~T0 @X0 1 ef2`i`**uc ]
 {
 [e :U _main ]
 [v _argc `i ~T0 @X0 1 r1 ]
 [v _argv `**uc ~T0 @X0 1 r2 ]
 [f ]
-"20
-[; ;main.c: 20:     ConfigClock();
-[e ( _ConfigClock ..  ]
 "22
-[; ;main.c: 22:     TRISF &= ~(1<<3);
-[e =& _TRISF -> ~ << -> 1 `i -> 3 `i `Vuc ]
-"23
-[; ;main.c: 23:     ANSELF &= ~(1<<3);
-[e =& _ANSELF -> ~ << -> 1 `i -> 3 `i `Vuc ]
+[; ;main.c: 22:     ConfigClock();
+[e ( _ConfigClock ..  ]
 "24
-[; ;main.c: 24:     WPUF &= ~(1<<3);
-[e =& _WPUF -> ~ << -> 1 `i -> 3 `i `Vuc ]
+[; ;main.c: 24:     TRISF &= ~(1<<3);
+[e =& _TRISF -> ~ << -> 1 `i -> 3 `i `Vuc ]
 "25
-[; ;main.c: 25:     INLVLF &= ~(1<<3);
-[e =& _INLVLF -> ~ << -> 1 `i -> 3 `i `Vuc ]
+[; ;main.c: 25:     ANSELF &= ~(1<<3);
+[e =& _ANSELF -> ~ << -> 1 `i -> 3 `i `Vuc ]
 "26
-[; ;main.c: 26:     SLRCONF |= (1<<3);
-[e =| _SLRCONF -> << -> 1 `i -> 3 `i `Vuc ]
+[; ;main.c: 26:     WPUF &= ~(1<<3);
+[e =& _WPUF -> ~ << -> 1 `i -> 3 `i `Vuc ]
 "27
-[; ;main.c: 27:     ODCONF &= ~(1<<3);
+[; ;main.c: 27:     INLVLF &= ~(1<<3);
+[e =& _INLVLF -> ~ << -> 1 `i -> 3 `i `Vuc ]
+"28
+[; ;main.c: 28:     SLRCONF |= (1<<3);
+[e =| _SLRCONF -> << -> 1 `i -> 3 `i `Vuc ]
+"29
+[; ;main.c: 29:     ODCONF &= ~(1<<3);
 [e =& _ODCONF -> ~ << -> 1 `i -> 3 `i `Vuc ]
+"33
+[; ;main.c: 33:     TRISB |= (1<<4);
+[e =| _TRISB -> << -> 1 `i -> 4 `i `Vuc ]
+"34
+[; ;main.c: 34:     ANSELB &= ~(1<<4);
+[e =& _ANSELB -> ~ << -> 1 `i -> 4 `i `Vuc ]
+"35
+[; ;main.c: 35:     WPUB |= (1<<4);
+[e =| _WPUB -> << -> 1 `i -> 4 `i `Vuc ]
 "36
-[; ;main.c: 36:     for(;;){
+[; ;main.c: 36:     INLVLB &= ~(1<<4);
+[e =& _INLVLB -> ~ << -> 1 `i -> 4 `i `Vuc ]
+"37
+[; ;main.c: 37:     SLRCONB |= (1<<4);
+[e =| _SLRCONB -> << -> 1 `i -> 4 `i `Vuc ]
+"38
+[; ;main.c: 38:     ODCONB &= ~(1<<4);
+[e =& _ODCONB -> ~ << -> 1 `i -> 4 `i `Vuc ]
+"49
+[; ;main.c: 49:     for(;;){
 {
 [e :U 2358 ]
 {
-"38
-[; ;main.c: 38:         LATF ^=(1<<3);
-[e =^ _LATF -> << -> 1 `i -> 3 `i `Vuc ]
-"39
-[; ;main.c: 39:         _delay((unsigned long)((200)*(64000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 64000000 `ul `d .4000.0 `ul ]
-"40
-[; ;main.c: 40:     }
+"51
+[; ;main.c: 51:         if (!(PORTB & (1<<4))) LATF &= ~(1<<3);
+[e $ ! ! != & -> _PORTB `i << -> 1 `i -> 4 `i -> 0 `i 2361  ]
+[e =& _LATF -> ~ << -> 1 `i -> 3 `i `Vuc ]
+[e $U 2362  ]
+"52
+[; ;main.c: 52:         else LATF |=(1<<3);
+[e :U 2361 ]
+[e =| _LATF -> << -> 1 `i -> 3 `i `Vuc ]
+[e :U 2362 ]
+"56
+[; ;main.c: 56:     }
 }
 [e $U 2358  ]
 [e :U 2359 ]
 }
-"42
-[; ;main.c: 42:     return (0);
+"58
+[; ;main.c: 58:     return (0);
 [e ) -> 0 `i ]
 [e $UE 2357  ]
-"43
-[; ;main.c: 43: }
+"59
+[; ;main.c: 59: }
 [e :UE 2357 ]
+}
+"61
+[; ;main.c: 61: void ejemplo1(void){
+[v _ejemplo1 `(v ~T0 @X0 1 ef ]
+{
+[e :U _ejemplo1 ]
+[f ]
+"62
+[; ;main.c: 62:   LATF ^=(1<<3);
+[e =^ _LATF -> << -> 1 `i -> 3 `i `Vuc ]
+"63
+[; ;main.c: 63:         _delay((unsigned long)((200)*(64000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 64000000 `ul `d .4000.0 `ul ]
+"65
+[; ;main.c: 65: }
+[e :UE 2363 ]
 }
