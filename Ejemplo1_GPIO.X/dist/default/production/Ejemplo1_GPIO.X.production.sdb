@@ -1,0 +1,61 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"64 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\Config.c
+[v _ConfigClock ConfigClock `(v  1 e 1 0 ]
+"18 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"5210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5448
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"41149
+[v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
+"41211
+[v _WPUF WPUF `VEuc  1 e 1 @1065 ]
+"41273
+[v _ODCONF ODCONF `VEuc  1 e 1 @1066 ]
+"41335
+[v _SLRCONF SLRCONF `VEuc  1 e 1 @1067 ]
+"41397
+[v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
+"47792
+[v _LATF LATF `VEuc  1 e 1 @1219 ]
+"48134
+[v _TRISF TRISF `VEuc  1 e 1 @1227 ]
+"18 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"43
+} 0
+"64 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo1_GPIO.X\Config.c
+[v _ConfigClock ConfigClock `(v  1 e 1 0 ]
+{
+"72
+} 0
