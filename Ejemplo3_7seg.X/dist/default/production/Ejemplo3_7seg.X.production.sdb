@@ -1,0 +1,189 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"64 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo3_7seg.X\Config.c
+[v _ConfigClock ConfigClock `(v  1 e 1 0 ]
+"5 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo3_7seg.X\DIS_7SEG.c
+[v _Write_Display7seg Write_Display7seg `(v  1 e 1 0 ]
+"23
+[v _Reset_Display7seg Reset_Display7seg `(v  1 e 1 0 ]
+"16 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo3_7seg.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"36
+[v _ConfiGPIO ConfiGPIO `(v  1 e 1 0 ]
+"5210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5448
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"39116
+[v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
+"39178
+[v _WPUA WPUA `VEuc  1 e 1 @1025 ]
+"39240
+[v _ODCONA ODCONA `VEuc  1 e 1 @1026 ]
+"39302
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @1027 ]
+"39364
+[v _INLVLA INLVLA `VEuc  1 e 1 @1028 ]
+"40108
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"40170
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"40232
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"40294
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"40356
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+"40604
+[v _ANSELD ANSELD `VEuc  1 e 1 @1048 ]
+"40666
+[v _WPUD WPUD `VEuc  1 e 1 @1049 ]
+"40728
+[v _ODCOND ODCOND `VEuc  1 e 1 @1050 ]
+"40790
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @1051 ]
+"40852
+[v _INLVLD INLVLD `VEuc  1 e 1 @1052 ]
+"40914
+[v _ANSELE ANSELE `VEuc  1 e 1 @1056 ]
+"40946
+[v _WPUE WPUE `VEuc  1 e 1 @1057 ]
+"40984
+[v _ODCONE ODCONE `VEuc  1 e 1 @1058 ]
+"41016
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @1059 ]
+"41048
+[v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
+"47512
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
+[s S58 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"47529
+[u S67 . 1 `S58 1 . 1 0 ]
+"47529
+"47529
+[v _LATAbits LATAbits `VES67  1 e 1 @1214 ]
+"47636
+[v _LATC LATC `VEuc  1 e 1 @1216 ]
+[s S102 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"47653
+[u S111 . 1 `S102 1 . 1 0 ]
+"47653
+"47653
+[v _LATCbits LATCbits `VES111  1 e 1 @1216 ]
+"47698
+[v _LATD LATD `VEuc  1 e 1 @1217 ]
+[s S129 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"47715
+[u S138 . 1 `S129 1 . 1 0 ]
+"47715
+"47715
+[v _LATDbits LATDbits `VES138  1 e 1 @1217 ]
+"47760
+[v _LATE LATE `VEuc  1 e 1 @1218 ]
+[s S85 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"47772
+[u S89 . 1 `S85 1 . 1 0 ]
+"47772
+"47772
+[v _LATEbits LATEbits `VES89  1 e 1 @1218 ]
+"47854
+[v _TRISA TRISA `VEuc  1 e 1 @1222 ]
+"47978
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+"48040
+[v _TRISD TRISD `VEuc  1 e 1 @1225 ]
+"48102
+[v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+[s S27 . 7 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 `uc 1 e 1 4 `uc 1 f 1 5 `uc 1 g 1 6 ]
+"15 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo3_7seg.X\main.c
+[v _Display1 Display1 `S27  1 e 7 0 ]
+"16
+[v _main main `(i  1 e 2 0 ]
+{
+"20
+[v main@i i `i  1 a 2 23 ]
+"34
+} 0
+"5 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo3_7seg.X\DIS_7SEG.c
+[v _Write_Display7seg Write_Display7seg `(v  1 e 1 0 ]
+{
+"7
+[v Write_Display7seg@Display_7Seg_C Display_7Seg_C `C[10]uc  1 a 10 5 ]
+"9
+[v Write_Display7seg@data data `uc  1 a 1 15 ]
+[s S27 . 7 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 `uc 1 e 1 4 `uc 1 f 1 5 `uc 1 g 1 6 ]
+"5
+[v Write_Display7seg@D7S D7S `*.39S27  1 p 2 0 ]
+[v Write_Display7seg@val val `uc  1 p 1 2 ]
+[v Write_Display7seg@F16705 F16705 `C[10]uc  1 s 10 F16705 ]
+"21
+} 0
+"23
+[v _Reset_Display7seg Reset_Display7seg `(v  1 e 1 0 ]
+{
+"33
+} 0
+"64 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo3_7seg.X\Config.c
+[v _ConfigClock ConfigClock `(v  1 e 1 0 ]
+{
+"72
+} 0
+"36 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo3_7seg.X\main.c
+[v _ConfiGPIO ConfiGPIO `(v  1 e 1 0 ]
+{
+"100
+} 0
