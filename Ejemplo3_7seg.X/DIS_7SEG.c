@@ -5,9 +5,11 @@
 void Write_Display7seg(Display7Seg *D7S,uint8_t val){
 
     const uint8_t Display_7Seg_C[] = {0x3F, 0X06 ,0X5B ,0x4f,0X66 ,0X6D, 0X7D, 0X07 ,0X7F, 0X67};
-                                              
+                     //const uint8_t Display_7Seg_A[]                         
     uint8_t data=Display_7Seg_C[val];
     Reset_Display7seg();
+    
+    
     if(data & 0x1)  LATA |= 1<<D7S->a;
     if(data & 1<<1) LATA |= 1<<D7S->b;
     if(data & 1<<2) LATE |= 1<<D7S->c;
