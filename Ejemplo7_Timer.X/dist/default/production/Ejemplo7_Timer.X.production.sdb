@@ -1,0 +1,240 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"22 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo7_Timer.X\main.c
+[e E508 . `uc
+Timer_8bit 0
+Timer_16bit 1
+]
+"13 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo7_Timer.X\TIMER.c
+[e E2 . `uc
+Timer_8bit 0
+Timer_16bit 1
+]
+"64 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero/Ejemplo7_Timer.X/Config.c
+[v _ConfigClock ConfigClock `(v  1 e 1 0 ]
+"6 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero/Ejemplo7_Timer.X/Interrupt.c
+[v _Interrupt_Config Interrupt_Config `(v  1 e 1 0 ]
+"32
+[v _InterrupExtern InterrupExtern `IIH(v  1 e 1 0 ]
+"42
+[v _DEFAULT_ISR DEFAULT_ISR `IIL(v  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"18 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo7_Timer.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"33
+[v _ConfiGPIO ConfiGPIO `(v  1 e 1 0 ]
+"13 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo7_Timer.X\TIMER.c
+[v _TimerInit TimerInit `(v  1 e 1 0 ]
+"5210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5448
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"23298
+[v _TMR0L TMR0L `VEuc  1 e 1 @792 ]
+"23436
+[v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
+[s S228 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"23718
+[s S234 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S240 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[u S246 . 1 `S228 1 . 1 0 `S234 1 . 1 0 `S240 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES246  1 e 1 @794 ]
+[s S269 . 1 `uc 1 CKPS 1 0 :4:0 
+`uc 1 ASYNC 1 0 :1:4 
+`uc 1 CS 1 0 :3:5 
+]
+"23825
+[s S273 . 1 `uc 1 CKPS0 1 0 :1:0 
+`uc 1 CKPS1 1 0 :1:1 
+`uc 1 CKPS2 1 0 :1:2 
+`uc 1 CKPS3 1 0 :1:3 
+`uc 1 T0ASYNC 1 0 :1:4 
+`uc 1 CS0 1 0 :1:5 
+`uc 1 CS1 1 0 :1:6 
+`uc 1 CS2 1 0 :1:7 
+]
+[s S282 . 1 `uc 1 T0CKPS 1 0 :4:0 
+`uc 1 . 1 0 :1:4 
+`uc 1 T0CS 1 0 :3:5 
+]
+[s S286 . 1 `uc 1 T0CKPS0 1 0 :1:0 
+`uc 1 T0CKPS1 1 0 :1:1 
+`uc 1 T0CKPS2 1 0 :1:2 
+`uc 1 T0CKPS3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 T0CS0 1 0 :1:5 
+`uc 1 T0CS1 1 0 :1:6 
+`uc 1 T0CS2 1 0 :1:7 
+]
+[u S295 . 1 `S269 1 . 1 0 `S273 1 . 1 0 `S282 1 . 1 0 `S286 1 . 1 0 ]
+[v _T0CON1bits T0CON1bits `VES295  1 e 1 @795 ]
+[s S95 . 1 `uc 1 SPI1RXIP 1 0 :1:0 
+`uc 1 SPI1TXIP 1 0 :1:1 
+`uc 1 SPI1IP 1 0 :1:2 
+`uc 1 TMR2IP 1 0 :1:3 
+`uc 1 TMR1IP 1 0 :1:4 
+`uc 1 TMR1GIP 1 0 :1:5 
+`uc 1 CCP1IP 1 0 :1:6 
+`uc 1 TMR0IP 1 0 :1:7 
+]
+"31140
+[u S104 . 1 `S95 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES104  1 e 1 @869 ]
+"41149
+[v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
+"41211
+[v _WPUF WPUF `VEuc  1 e 1 @1065 ]
+"41273
+[v _ODCONF ODCONF `VEuc  1 e 1 @1066 ]
+"41335
+[v _SLRCONF SLRCONF `VEuc  1 e 1 @1067 ]
+"41397
+[v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
+"44359
+[v _IVTBASEL IVTBASEL `VEuc  1 e 1 @1117 ]
+"44421
+[v _IVTBASEH IVTBASEH `VEuc  1 e 1 @1118 ]
+"44483
+[v _IVTBASEU IVTBASEU `VEuc  1 e 1 @1119 ]
+[s S53 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+`uc 1 SPI1TXIE 1 0 :1:1 
+`uc 1 SPI1IE 1 0 :1:2 
+`uc 1 TMR2IE 1 0 :1:3 
+`uc 1 TMR1IE 1 0 :1:4 
+`uc 1 TMR1GIE 1 0 :1:5 
+`uc 1 CCP1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"45940
+[u S62 . 1 `S53 1 . 1 0 ]
+"45940
+"45940
+[v _PIE3bits PIE3bits `VES62  1 e 1 @1185 ]
+[s S74 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+`uc 1 SPI1TXIF 1 0 :1:1 
+`uc 1 SPI1IF 1 0 :1:2 
+`uc 1 TMR2IF 1 0 :1:3 
+`uc 1 TMR1IF 1 0 :1:4 
+`uc 1 TMR1GIF 1 0 :1:5 
+`uc 1 CCP1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"46814
+[u S83 . 1 `S74 1 . 1 0 ]
+"46814
+"46814
+[v _PIR3bits PIR3bits `VES83  1 e 1 @1201 ]
+"47792
+[v _LATF LATF `VEuc  1 e 1 @1219 ]
+[s S186 . 1 `uc 1 LATF0 1 0 :1:0 
+`uc 1 LATF1 1 0 :1:1 
+`uc 1 LATF2 1 0 :1:2 
+`uc 1 LATF3 1 0 :1:3 
+`uc 1 LATF4 1 0 :1:4 
+`uc 1 LATF5 1 0 :1:5 
+`uc 1 LATF6 1 0 :1:6 
+`uc 1 LATF7 1 0 :1:7 
+]
+"47809
+[u S195 . 1 `S186 1 . 1 0 ]
+"47809
+"47809
+[v _LATFbits LATFbits `VES195  1 e 1 @1219 ]
+"48134
+[v _TRISF TRISF `VEuc  1 e 1 @1227 ]
+[s S27 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"48564
+[s S35 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"48564
+[u S38 . 1 `S27 1 . 1 0 `S35 1 . 1 0 ]
+"48564
+"48564
+[v _INTCON0bits INTCON0bits `VES38  1 e 1 @1238 ]
+"18 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo7_Timer.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"32
+} 0
+"13 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo7_Timer.X\TIMER.c
+[v _TimerInit TimerInit `(v  1 e 1 0 ]
+{
+[v TimerInit@MT MT `E2  1 a 1 wreg ]
+[v TimerInit@MT MT `E2  1 a 1 wreg ]
+[v TimerInit@MT MT `E2  1 a 1 2 ]
+"37
+} 0
+"6 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero/Ejemplo7_Timer.X/Interrupt.c
+[v _Interrupt_Config Interrupt_Config `(v  1 e 1 0 ]
+{
+"30
+} 0
+"64 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero/Ejemplo7_Timer.X/Config.c
+[v _ConfigClock ConfigClock `(v  1 e 1 0 ]
+{
+"72
+} 0
+"33 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo7_Timer.X\main.c
+[v _ConfiGPIO ConfiGPIO `(v  1 e 1 0 ]
+{
+"47
+} 0
+"42 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero/Ejemplo7_Timer.X/Interrupt.c
+[v _DEFAULT_ISR DEFAULT_ISR `IIL(v  1 e 1 0 ]
+{
+"45
+} 0
+"32
+[v _InterrupExtern InterrupExtern `IIH(v  1 e 1 0 ]
+{
+"39
+} 0
