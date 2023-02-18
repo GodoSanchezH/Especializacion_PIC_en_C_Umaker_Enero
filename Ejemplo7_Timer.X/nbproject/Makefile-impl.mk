@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Ejemplo7_timer.X
+PROJECTNAME=Ejemplo7_Timer.X
 
 # Active Configuration
 DEFAULTCONF=default
