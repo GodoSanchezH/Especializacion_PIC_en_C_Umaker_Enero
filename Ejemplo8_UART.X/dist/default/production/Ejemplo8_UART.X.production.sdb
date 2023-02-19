@@ -3,6 +3,12 @@
 [d edition pro ]
 [d chip 18F57Q43 ]
 [d frameptr 1249 ]
+"406 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v _ctoa ctoa `(v  1 s 1 ctoa ]
+"1007
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1520
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
@@ -15,6 +21,12 @@
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
 "19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -33,65 +45,54 @@
 [v _Interrupt_Config Interrupt_Config `(v  1 e 1 0 ]
 "31
 [v _HP_ISR HP_ISR `IIH(v  1 e 1 0 ]
-"42
+"53
 [v _DEFAULT_ISR DEFAULT_ISR `IIL(v  1 e 1 0 ]
 "16 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\MAIN.c
 [v _main main `(i  1 e 2 0 ]
-"6 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\Uart.c
+"7 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\Uart.c
 [v _UART_Init UART_Init `(v  1 e 1 0 ]
-"34
+"39
 [v _UART_PutC UART_PutC `(v  1 e 1 0 ]
-"40
-[v _UART_PutS UART_PutS `(v  1 e 1 0 ]
+"53
+[v _putch putch `(v  1 e 1 0 ]
 "5210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
 "5448
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
 "10604
 [v _RF0PPS RF0PPS `VEuc  1 e 1 @553 ]
-[s S276 . 1 `uc 1 PIN 1 0 :3:0 
-`uc 1 PORT 1 0 :3:3 
-]
-"14800
-[s S279 . 1 `uc 1 U1RXPPS 1 0 :6:0 
-]
-[s S281 . 1 `uc 1 U1RXPPS0 1 0 :1:0 
-`uc 1 U1RXPPS1 1 0 :1:1 
-`uc 1 U1RXPPS2 1 0 :1:2 
-`uc 1 U1RXPPS3 1 0 :1:3 
-`uc 1 U1RXPPS4 1 0 :1:4 
-`uc 1 U1RXPPS5 1 0 :1:5 
-]
-[u S288 . 1 `S276 1 . 1 0 `S279 1 . 1 0 `S281 1 . 1 0 ]
-[v _U1RXPPSbits U1RXPPSbits `VES288  1 e 1 @626 ]
+"14778
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @626 ]
+"17047
+[v _U1RXB U1RXB `VEuc  1 e 1 @673 ]
 "17105
 [v _U1TXB U1TXB `VEuc  1 e 1 @675 ]
-[s S182 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S233 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "17337
-[s S187 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S238 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S193 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S244 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[s S198 . 1 `uc 1 MODE 1 0 :4:0 
+[s S249 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S204 . 1 `S182 1 . 1 0 `S187 1 . 1 0 `S193 1 . 1 0 `S198 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES204  1 e 1 @683 ]
-[s S233 . 1 `uc 1 SENDB 1 0 :1:0 
+[u S255 . 1 `S233 1 . 1 0 `S238 1 . 1 0 `S244 1 . 1 0 `S249 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES255  1 e 1 @683 ]
+[s S284 . 1 `uc 1 SENDB 1 0 :1:0 
 `uc 1 BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 RXBIMD 1 0 :1:3 
@@ -100,7 +101,7 @@
 `uc 1 ON 1 0 :1:7 
 ]
 "17457
-[s S241 . 1 `uc 1 U1SENDB 1 0 :1:0 
+[s S292 . 1 `uc 1 U1SENDB 1 0 :1:0 
 `uc 1 U1BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 U1RXBIMD 1 0 :1:3 
@@ -108,11 +109,11 @@
 `uc 1 . 1 0 :2:5 
 `uc 1 U1ON 1 0 :1:7 
 ]
-[u S249 . 1 `S233 1 . 1 0 `S241 1 . 1 0 ]
-[v _U1CON1bits U1CON1bits `VES249  1 e 1 @684 ]
+[u S300 . 1 `S284 1 . 1 0 `S292 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES300  1 e 1 @684 ]
 "17654
 [v _U1BRG U1BRG `VEus  1 e 2 @686 ]
-[s S305 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S328 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -122,7 +123,7 @@
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "17914
-[s S314 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S337 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -131,8 +132,8 @@
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S323 . 1 `S305 1 . 1 0 `S314 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES323  1 e 1 @690 ]
+[u S346 . 1 `S328 1 . 1 0 `S337 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES346  1 e 1 @690 ]
 [s S88 . 1 `uc 1 U1RXIP 1 0 :1:0 
 `uc 1 U1TXIP 1 0 :1:1 
 `uc 1 U1EIP 1 0 :1:2 
@@ -186,6 +187,20 @@
 "46875
 "46875
 [v _PIR4bits PIR4bits `VES77  1 e 1 @1202 ]
+[s S111 . 1 `uc 1 LATF0 1 0 :1:0 
+`uc 1 LATF1 1 0 :1:1 
+`uc 1 LATF2 1 0 :1:2 
+`uc 1 LATF3 1 0 :1:3 
+`uc 1 LATF4 1 0 :1:4 
+`uc 1 LATF5 1 0 :1:5 
+`uc 1 LATF6 1 0 :1:6 
+`uc 1 LATF7 1 0 :1:7 
+]
+"47809
+[u S120 . 1 `S111 1 . 1 0 ]
+"47809
+"47809
+[v _LATFbits LATFbits `VES120  1 e 1 @1219 ]
 "48134
 [v _TRISF TRISF `VEuc  1 e 1 @1227 ]
 [s S24 . 1 `uc 1 INT0EDG 1 0 :1:0 
@@ -205,30 +220,97 @@
 "48564
 "48564
 [v _INTCON0bits INTCON0bits `VES35  1 e 1 @1238 ]
+"99 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"100
+[v _flags flags `uc  1 s 1 flags ]
+"30 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\Interrupt.c
+[v _dato dato `uc  1 e 1 0 ]
 "16 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\MAIN.c
 [v _main main `(i  1 e 2 0 ]
 {
-"34
+"31
+[v main@i i `uc  1 a 1 58 ]
+[v main@j j `uc  1 a 1 57 ]
+"47
 } 0
-"40 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\Uart.c
-[v _UART_PutS UART_PutS `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
 {
-[v UART_PutS@ch ch `*.32uc  1 p 2 1 ]
-"45
+"8
+[v printf@ap ap `[1]*.39v  1 a 2 48 ]
+"5
+[v printf@fmt fmt `*.32Cuc  1 p 2 38 ]
+"13
 } 0
-"34
+"1520 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1523
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 36 ]
+[s S861 _IO_FILE 0 ]
+"1520
+[v vfprintf@fp fp `*.2S861  1 p 2 30 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 32 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 34 ]
+"1543
+} 0
+"1007
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+"1009
+[v vfpfcnvrt@c c `uc  1 a 1 29 ]
+[s S861 _IO_FILE 0 ]
+"1007
+[v vfpfcnvrt@fp fp `*.2S861  1 p 2 21 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 23 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 25 ]
+"1517
+} 0
+"406
+[v _ctoa ctoa `(v  1 s 1 ctoa ]
+{
+"408
+[v ctoa@w w `i  1 a 2 19 ]
+[v ctoa@l l `i  1 a 2 17 ]
+[s S861 _IO_FILE 0 ]
+"406
+[v ctoa@fp fp `*.2S861  1 p 2 13 ]
+[v ctoa@c c `uc  1 p 1 15 ]
+"439
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 4 ]
+[u S839 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S842 _IO_FILE 11 `S839 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.2S842  1 p 2 6 ]
+"24
+} 0
+"53 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\Uart.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@datatx datatx `uc  1 a 1 wreg ]
+[v putch@datatx datatx `uc  1 a 1 wreg ]
+"55
+[v putch@datatx datatx `uc  1 a 1 3 ]
+"56
+} 0
+"39
 [v _UART_PutC UART_PutC `(v  1 e 1 0 ]
 {
 [v UART_PutC@ch ch `uc  1 a 1 wreg ]
 [v UART_PutC@ch ch `uc  1 a 1 wreg ]
-[v UART_PutC@ch ch `uc  1 a 1 0 ]
-"39
+[v UART_PutC@ch ch `uc  1 a 1 2 ]
+"44
 } 0
-"6
+"7
 [v _UART_Init UART_Init `(v  1 e 1 0 ]
 {
-[v UART_Init@Baud Baud `ul  1 p 4 0 ]
-"33
+[v UART_Init@Baud Baud `ul  1 p 4 2 ]
+"38
 } 0
 "6 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\Interrupt.c
 [v _Interrupt_Config Interrupt_Config `(v  1 e 1 0 ]
@@ -240,13 +322,13 @@
 {
 "72
 } 0
-"42 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\Interrupt.c
+"53 C:\Users\gssan\OneDrive\Documentos\GitHub\Especializacion_PIC_en_C_Umaker_Enero\Ejemplo8_UART.X\Interrupt.c
 [v _DEFAULT_ISR DEFAULT_ISR `IIL(v  1 e 1 0 ]
 {
-"45
+"56
 } 0
 "31
 [v _HP_ISR HP_ISR `IIH(v  1 e 1 0 ]
 {
-"36
+"47
 } 0

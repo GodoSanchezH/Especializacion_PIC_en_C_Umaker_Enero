@@ -58,6 +58,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _IVTBASEL `Vuc ~T0 @X0 0 e@1117 ]
 [t ~ __interrupt . k ]
 [t T3 __interrupt irq ( 32 ) base ( 1024 ) high_priority ]
+"17047
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 17047: extern volatile unsigned char U1RXB __attribute__((address(0x2A1)));
+[v _U1RXB `Vuc ~T0 @X0 0 e@673 ]
+"47798
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 47798:     struct {
+[s S2236 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2236 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
+"47797
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 47797: typedef union {
+[u S2235 `S2236 1 ]
+[n S2235 . . ]
+"47809
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 47809: extern volatile LATFbits_t LATFbits __attribute__((address(0x4C3)));
+[v _LATFbits `VS2235 ~T0 @X0 0 e@1219 ]
 [t T4 __interrupt irq ( 48 ) base ( 1024 ) low_priority ]
 "328 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 328: __asm("CLKRCON equ 039h");
@@ -2655,6 +2669,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Interrupt.c: 29: }
 [e :UE 2357 ]
 }
+"30
+[; ;Interrupt.c: 30: char dato;
+[v _dato `uc ~T0 @X0 1 e ]
 [v $root$_HP_ISR `(v ~T0 @X0 0 e ]
 "31
 [; ;Interrupt.c: 31: void __attribute__((picinterrupt(("irq(32),base(0x400),high_priority")))) HP_ISR(void){
@@ -2662,21 +2679,55 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _HP_ISR ]
 [f ]
+"32
+[; ;Interrupt.c: 32:      dato=U1RXB;
+[e = _dato -> _U1RXB `uc ]
+"34
+[; ;Interrupt.c: 34:     switch(dato){
+[e $U 2360  ]
+{
 "35
-[; ;Interrupt.c: 35:      PIR4bits.U1RXIF = 0;
-[e = . . _PIR4bits 0 0 -> -> 0 `i `uc ]
+[; ;Interrupt.c: 35:         case 'A':
+[e :U 2361 ]
 "36
-[; ;Interrupt.c: 36: }
+[; ;Interrupt.c: 36:             LATFbits.LATF3 = 0;
+[e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
+"37
+[; ;Interrupt.c: 37:             break;
+[e $U 2359  ]
+"38
+[; ;Interrupt.c: 38:         case 'B':
+[e :U 2362 ]
+"39
+[; ;Interrupt.c: 39:             LATFbits.LATF3 = 1;
+[e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
+"41
+[; ;Interrupt.c: 41:             break;
+[e $U 2359  ]
+"43
+[; ;Interrupt.c: 43:     }
+}
+[e $U 2359  ]
+[e :U 2360 ]
+[e [\ -> _dato `i , $ -> -> 65 `ui `i 2361
+ , $ -> -> 66 `ui `i 2362
+ 2359 ]
+[e :U 2359 ]
+"46
+[; ;Interrupt.c: 46:      PIR4bits.U1RXIF = 0;
+[e = . . _PIR4bits 0 0 -> -> 0 `i `uc ]
+"47
+[; ;Interrupt.c: 47: }
 [e :UE 2358 ]
 }
 [v $root$_DEFAULT_ISR `(v ~T0 @X0 0 e ]
-"42
-[; ;Interrupt.c: 42: void __attribute__((picinterrupt(("irq(48),base(0x400),low_priority")))) DEFAULT_ISR(void){
+"53
+[; ;Interrupt.c: 53: void __attribute__((picinterrupt(("irq(48),base(0x400),low_priority")))) DEFAULT_ISR(void){
 [v _DEFAULT_ISR `(v ~T4 @X0 1 ef ]
 {
 [e :U _DEFAULT_ISR ]
 [f ]
-"45
-[; ;Interrupt.c: 45: }
-[e :UE 2359 ]
+"56
+[; ;Interrupt.c: 56: }
+[e :UE 2363 ]
 }

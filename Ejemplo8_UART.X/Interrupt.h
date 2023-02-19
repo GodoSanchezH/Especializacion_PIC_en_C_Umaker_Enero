@@ -14,7 +14,7 @@
 #include <xc.h>
 
 void Interrupt_Config(void);
-void __interrupt(irq(IRQ_INT0),base(0x400),high_priority) HP_ISR(void);
+void __interrupt(irq(IRQ_U1RX),base(0x400),high_priority) HP_ISR(void);
 void __interrupt(irq(IRQ_INT1),base(0x400),low_priority) DEFAULT_ISR(void);
 
 #endif	/* INTERRUPT_H */

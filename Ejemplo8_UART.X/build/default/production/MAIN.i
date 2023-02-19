@@ -28849,7 +28849,7 @@ unsigned char __t3rd16on(void);
 
 
 void Interrupt_Config(void);
-void __attribute__((picinterrupt(("irq(8),base(0x400),high_priority")))) HP_ISR(void);
+void __attribute__((picinterrupt(("irq(32),base(0x400),high_priority")))) HP_ISR(void);
 void __attribute__((picinterrupt(("irq(48),base(0x400),low_priority")))) DEFAULT_ISR(void);
 # 11 "MAIN.c" 2
 
@@ -28869,11 +28869,24 @@ int main(int argc, char** argv) {
     Interrupt_Config();
     UART_Init(9600);
 
-
+    TRISF &= ~(1<<3);
+    ANSELF &= ~(1<<3);
+    WPUF &= ~(1<<3);
+    INLVLF &= ~(1<<3);
+    SLRCONF |= (1<<3);
+    ODCONF &= ~(1<<3);
+    LATFbits.LATF3=1;
     for(;;){
 
-        UART_PutS("Hola mundo pic\n\r");
-       _delay((unsigned long)((500)*(64000000UL/4000.0)));
+        uint8_t i,j;
+        for (i = 0; i < 50; i++) {
+            j = ~i;
+            printf("%c%c%c%c",0x00,i,j,0xff);
+            _delay((unsigned long)((200)*(64000000UL/4000.0)));
+
+        }
+
+
 
     }
 

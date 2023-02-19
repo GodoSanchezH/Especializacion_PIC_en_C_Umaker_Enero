@@ -10,20 +10,33 @@
 #include "Config.h"
 #include "Interrupt.h"
 #include "Uart.h"
-/*
- * 
- */
+
+
+
 int main(int argc, char** argv) {
     
     ConfigClock();
     Interrupt_Config();
     UART_Init(9600);
     
-    
+    TRISF &= ~(1<<3); //definido como salida
+    ANSELF &= ~(1<<3);// pin digital
+    WPUF &= ~(1<<3);//pull-up desactivado
+    INLVLF &= ~(1<<3);//ttl
+    SLRCONF |= (1<<3);//limit
+    ODCONF &= ~(1<<3);//pushpull
+    LATFbits.LATF3=1;
     for(;;){
     
-        UART_PutS("Hola mundo pic\n\r");
-       __delay_ms(500);
+        uint8_t i,j;
+        for (i = 0; i < 50; i++) {
+            j = ~i;
+            printf("%c%c%c%c",0x00,i,j,0xff);
+            __delay_ms(200);
+
+        }
+
+        
     
     }
     

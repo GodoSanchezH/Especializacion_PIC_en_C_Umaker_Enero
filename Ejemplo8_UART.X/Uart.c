@@ -2,6 +2,7 @@
 #include "Uart.h"
 #include "Config.h"
 #include <xc.h>
+#include <stdio.h>
 
 void UART_Init(uint32_t Baud){
 
@@ -27,9 +28,13 @@ void UART_Init(uint32_t Baud){
   
     
     //Rx -RF1
-    U1RXPPSbits.PIN = 0B001;
-    U1RXPPSbits.PORT = 0B101;
-    
+    U1RXPPS = 0B101001;
+    TRISF |= (1<<1); //definido como salida
+    ANSELF &= ~(1<<1);// pin digital
+    WPUF &= ~(1<<1);//pull-up desactivado
+    INLVLF &= ~(1<<1);//ttl
+    SLRCONF |= (1<<1);//limit
+    ODCONF &= ~(1<<1);//pushpull
 }
 void UART_PutC(char ch){
 
@@ -45,3 +50,7 @@ void UART_PutS(char *ch){
 }
 
 
+void putch(char datatx) 
+{
+ UART_PutC(datatx);
+}

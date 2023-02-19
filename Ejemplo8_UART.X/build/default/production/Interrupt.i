@@ -28842,7 +28842,7 @@ unsigned char __t3rd16on(void);
 
 
 void Interrupt_Config(void);
-void __attribute__((picinterrupt(("irq(8),base(0x400),high_priority")))) HP_ISR(void);
+void __attribute__((picinterrupt(("irq(32),base(0x400),high_priority")))) HP_ISR(void);
 void __attribute__((picinterrupt(("irq(48),base(0x400),low_priority")))) DEFAULT_ISR(void);
 # 1 "Interrupt.c" 2
 
@@ -28878,9 +28878,20 @@ void Interrupt_Config(void){
 
 
 }
-
+char dato;
 void __attribute__((picinterrupt(("irq(32),base(0x400),high_priority")))) HP_ISR(void){
+     dato=U1RXB;
 
+    switch(dato){
+        case 'A':
+            LATFbits.LATF3 = 0;
+            break;
+        case 'B':
+            LATFbits.LATF3 = 1;
+
+            break;
+
+    }
 
 
      PIR4bits.U1RXIF = 0;

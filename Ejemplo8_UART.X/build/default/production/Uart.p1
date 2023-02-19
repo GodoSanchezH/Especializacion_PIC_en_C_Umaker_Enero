@@ -61,25 +61,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "41273
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 41273: extern volatile unsigned char ODCONF __attribute__((address(0x42A)));
 [v _ODCONF `Vuc ~T0 @X0 0 e@1066 ]
-"14784
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 14784:     struct {
-[s S711 :3 `uc 1 :3 `uc 1 ]
-[n S711 . PIN PORT ]
-"14788
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 14788:     struct {
-[s S712 :6 `uc 1 ]
-[n S712 . U1RXPPS ]
-"14791
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 14791:     struct {
-[s S713 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S713 . U1RXPPS0 U1RXPPS1 U1RXPPS2 U1RXPPS3 U1RXPPS4 U1RXPPS5 ]
-"14783
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 14783: typedef union {
-[u S710 `S711 1 `S712 1 `S713 1 ]
-[n S710 . . . . ]
-"14800
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 14800: extern volatile U1RXPPSbits_t U1RXPPSbits __attribute__((address(0x272)));
-[v _U1RXPPSbits `VS710 ~T0 @X0 0 e@626 ]
+"14778
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 14778: extern volatile unsigned char U1RXPPS __attribute__((address(0x272)));
+[v _U1RXPPS `Vuc ~T0 @X0 0 e@626 ]
 "17893
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 17893:     struct {
 [s S873 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -2651,103 +2635,138 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49822
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 49822: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"6 Uart.c
-[; ;Uart.c: 6: void UART_Init(uint32_t Baud){
+"7 Uart.c
+[; ;Uart.c: 7: void UART_Init(uint32_t Baud){
 [v _UART_Init `(v ~T0 @X0 1 ef1`ul ]
 {
 [e :U _UART_Init ]
 [v _Baud `ul ~T0 @X0 1 r1 ]
 [f ]
-"9
-[; ;Uart.c: 9:     U1CON0bits.BRGS = 0;
-[e = . . _U1CON0bits 3 4 -> -> 0 `i `uc ]
 "10
-[; ;Uart.c: 10:     U1BRG = 416;
+[; ;Uart.c: 10:     U1CON0bits.BRGS = 0;
+[e = . . _U1CON0bits 3 4 -> -> 0 `i `uc ]
+"11
+[; ;Uart.c: 11:     U1BRG = 416;
 [e = _U1BRG -> -> 416 `i `us ]
-"13
-[; ;Uart.c: 13:     U1CON0bits.MODE = 0b0000 ;
-[e = . . _U1CON0bits 3 0 -> -> 0 `i `uc ]
 "14
-[; ;Uart.c: 14:     U1CON0bits.TXEN = 1;
-[e = . . _U1CON0bits 3 2 -> -> 1 `i `uc ]
+[; ;Uart.c: 14:     U1CON0bits.MODE = 0b0000 ;
+[e = . . _U1CON0bits 3 0 -> -> 0 `i `uc ]
 "15
-[; ;Uart.c: 15:     U1CON0bits.RXEN = 1;
-[e = . . _U1CON0bits 3 1 -> -> 1 `i `uc ]
+[; ;Uart.c: 15:     U1CON0bits.TXEN = 1;
+[e = . . _U1CON0bits 3 2 -> -> 1 `i `uc ]
 "16
-[; ;Uart.c: 16:     U1CON1bits.ON = 1;
+[; ;Uart.c: 16:     U1CON0bits.RXEN = 1;
+[e = . . _U1CON0bits 3 1 -> -> 1 `i `uc ]
+"17
+[; ;Uart.c: 17:     U1CON1bits.ON = 1;
 [e = . . _U1CON1bits 0 6 -> -> 1 `i `uc ]
-"20
-[; ;Uart.c: 20:     RF0PPS = 0x20;
-[e = _RF0PPS -> -> 32 `i `uc ]
 "21
-[; ;Uart.c: 21:     TRISF &= ~(1<<0);
-[e =& _TRISF -> ~ << -> 1 `i -> 0 `i `Vuc ]
+[; ;Uart.c: 21:     RF0PPS = 0x20;
+[e = _RF0PPS -> -> 32 `i `uc ]
 "22
-[; ;Uart.c: 22:     ANSELF &= ~(1<<0);
-[e =& _ANSELF -> ~ << -> 1 `i -> 0 `i `Vuc ]
+[; ;Uart.c: 22:     TRISF &= ~(1<<0);
+[e =& _TRISF -> ~ << -> 1 `i -> 0 `i `Vuc ]
 "23
-[; ;Uart.c: 23:     WPUF &= ~(1<<0);
-[e =& _WPUF -> ~ << -> 1 `i -> 0 `i `Vuc ]
+[; ;Uart.c: 23:     ANSELF &= ~(1<<0);
+[e =& _ANSELF -> ~ << -> 1 `i -> 0 `i `Vuc ]
 "24
-[; ;Uart.c: 24:     INLVLF &= ~(1<<0);
-[e =& _INLVLF -> ~ << -> 1 `i -> 0 `i `Vuc ]
+[; ;Uart.c: 24:     WPUF &= ~(1<<0);
+[e =& _WPUF -> ~ << -> 1 `i -> 0 `i `Vuc ]
 "25
-[; ;Uart.c: 25:     SLRCONF |= (1<<0);
-[e =| _SLRCONF -> << -> 1 `i -> 0 `i `Vuc ]
+[; ;Uart.c: 25:     INLVLF &= ~(1<<0);
+[e =& _INLVLF -> ~ << -> 1 `i -> 0 `i `Vuc ]
 "26
-[; ;Uart.c: 26:     ODCONF &= ~(1<<0);
+[; ;Uart.c: 26:     SLRCONF |= (1<<0);
+[e =| _SLRCONF -> << -> 1 `i -> 0 `i `Vuc ]
+"27
+[; ;Uart.c: 27:     ODCONF &= ~(1<<0);
 [e =& _ODCONF -> ~ << -> 1 `i -> 0 `i `Vuc ]
-"30
-[; ;Uart.c: 30:     U1RXPPSbits.PIN = 0B001;
-[e = . . _U1RXPPSbits 0 0 -> -> 1 `i `uc ]
 "31
-[; ;Uart.c: 31:     U1RXPPSbits.PORT = 0B101;
-[e = . . _U1RXPPSbits 0 1 -> -> 5 `i `uc ]
+[; ;Uart.c: 31:     U1RXPPS = 0B101001;
+[e = _U1RXPPS -> -> 41 `i `uc ]
+"32
+[; ;Uart.c: 32:     TRISF |= (1<<1);
+[e =| _TRISF -> << -> 1 `i -> 1 `i `Vuc ]
 "33
-[; ;Uart.c: 33: }
-[e :UE 2355 ]
-}
+[; ;Uart.c: 33:     ANSELF &= ~(1<<1);
+[e =& _ANSELF -> ~ << -> 1 `i -> 1 `i `Vuc ]
 "34
-[; ;Uart.c: 34: void UART_PutC(char ch){
+[; ;Uart.c: 34:     WPUF &= ~(1<<1);
+[e =& _WPUF -> ~ << -> 1 `i -> 1 `i `Vuc ]
+"35
+[; ;Uart.c: 35:     INLVLF &= ~(1<<1);
+[e =& _INLVLF -> ~ << -> 1 `i -> 1 `i `Vuc ]
+"36
+[; ;Uart.c: 36:     SLRCONF |= (1<<1);
+[e =| _SLRCONF -> << -> 1 `i -> 1 `i `Vuc ]
+"37
+[; ;Uart.c: 37:     ODCONF &= ~(1<<1);
+[e =& _ODCONF -> ~ << -> 1 `i -> 1 `i `Vuc ]
+"38
+[; ;Uart.c: 38: }
+[e :UE 2357 ]
+}
+"39
+[; ;Uart.c: 39: void UART_PutC(char ch){
 [v _UART_PutC `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _UART_PutC ]
 [v _ch `uc ~T0 @X0 1 r1 ]
 [f ]
-"36
-[; ;Uart.c: 36:     while(U1ERRIRbits.TXMTIF == 0);
-[e $U 2357  ]
-[e :U 2358 ]
-[e :U 2357 ]
-[e $ == -> . . _U1ERRIRbits 0 7 `i -> 0 `i 2358  ]
+"41
+[; ;Uart.c: 41:     while(U1ERRIRbits.TXMTIF == 0);
+[e $U 2359  ]
+[e :U 2360 ]
 [e :U 2359 ]
-"37
-[; ;Uart.c: 37:     U1TXB = ch;
+[e $ == -> . . _U1ERRIRbits 0 7 `i -> 0 `i 2360  ]
+[e :U 2361 ]
+"42
+[; ;Uart.c: 42:     U1TXB = ch;
 [e = _U1TXB -> _ch `uc ]
-"39
-[; ;Uart.c: 39: }
-[e :UE 2356 ]
+"44
+[; ;Uart.c: 44: }
+[e :UE 2358 ]
 }
-"40
-[; ;Uart.c: 40: void UART_PutS(char *ch){
+"45
+[; ;Uart.c: 45: void UART_PutS(char *ch){
 [v _UART_PutS `(v ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _UART_PutS ]
 [v _ch `*uc ~T0 @X0 1 r1 ]
 [f ]
-"42
-[; ;Uart.c: 42:     while(*ch)
-[e $U 2361  ]
-[e :U 2362 ]
-"43
-[; ;Uart.c: 43:         UART_PutC(*ch++);
+"47
+[; ;Uart.c: 47:     while(*ch)
+[e $U 2363  ]
+[e :U 2364 ]
+"48
+[; ;Uart.c: 48:         UART_PutC(*ch++);
 [e ( _UART_PutC (1 *U ++ _ch * -> -> 1 `i `x -> -> # *U _ch `i `x ]
-[e :U 2361 ]
-"42
-[; ;Uart.c: 42:     while(*ch)
-[e $ != -> *U _ch `i -> 0 `i 2362  ]
 [e :U 2363 ]
-"45
-[; ;Uart.c: 45: }
-[e :UE 2360 ]
+"47
+[; ;Uart.c: 47:     while(*ch)
+[e $ != -> *U _ch `i -> 0 `i 2364  ]
+[e :U 2365 ]
+"50
+[; ;Uart.c: 50: }
+[e :UE 2362 ]
+}
+"53
+[; ;Uart.c: 53: void putch(char datatx)
+[v _putch `(v ~T0 @X0 1 ef1`uc ]
+"54
+[; ;Uart.c: 54: {
+{
+[e :U _putch ]
+"53
+[; ;Uart.c: 53: void putch(char datatx)
+[v _datatx `uc ~T0 @X0 1 r1 ]
+"54
+[; ;Uart.c: 54: {
+[f ]
+"55
+[; ;Uart.c: 55:  UART_PutC(datatx);
+[e ( _UART_PutC (1 _datatx ]
+"56
+[; ;Uart.c: 56: }
+[e :UE 2366 ]
 }
