@@ -1,22 +1,61 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
-"58 ./mcc_generated_files/system/../uart/../system/system.h
-[; ;./mcc_generated_files/system/../uart/../system/system.h: 58: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"58 main.c
-[; ;main.c: 58:         adc_read[0] = ADCC_GetSingleConversion(channel_ANA0);
-[c E17012 59 60 61 62 63 0 2 .. ]
-[n E17012 . channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2 channel_ANA0 channel_ANA2  ]
-"118 ./mcc_generated_files/system/../adc/adcc.h
-[; ;./mcc_generated_files/system/../adc/adcc.h: 118: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
-[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E17012 ]
-"105 C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h: 105: int printf(const char *restrict, ...);
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-[v F192 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\builtins.h
-[v __delay `JF192 ~T0 @X0 0 e ]
-[p i __delay ]
+"97 mcc_generated_files/mcc.h
+[; ;mcc_generated_files/mcc.h: 97: void PMD_Initialize(void);
+[v _PMD_Initialize `(v ~T0 @X0 0 ef ]
+"162 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 162: void PIN_MANAGER_Initialize (void);
+[v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
+"84 mcc_generated_files/mcc.h
+[; ;mcc_generated_files/mcc.h: 84: void OSCILLATOR_Initialize(void);
+[v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
+"131 mcc_generated_files/adcc.h
+[; ;mcc_generated_files/adcc.h: 131: void ADCC_Initialize(void);
+[v _ADCC_Initialize `(v ~T0 @X0 0 ef ]
+"111 mcc_generated_files/uart1.h
+[; ;mcc_generated_files/uart1.h: 111: void UART1_Initialize(void);
+[v _UART1_Initialize `(v ~T0 @X0 0 ef ]
+"5210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 5210: extern volatile unsigned char OSCCON1 __attribute__((address(0x0AD)));
+[v _OSCCON1 `Vuc ~T0 @X0 0 e@173 ]
+"5350
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 5350: extern volatile unsigned char OSCCON3 __attribute__((address(0x0AF)));
+[v _OSCCON3 `Vuc ~T0 @X0 0 e@175 ]
+"5650
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 5650: extern volatile unsigned char OSCEN __attribute__((address(0x0B3)));
+[v _OSCEN `Vuc ~T0 @X0 0 e@179 ]
+"5448
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 5448: extern volatile unsigned char OSCFRQ __attribute__((address(0x0B1)));
+[v _OSCFRQ `Vuc ~T0 @X0 0 e@177 ]
+"5390
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 5390: extern volatile unsigned char OSCTUNE __attribute__((address(0x0B0)));
+[v _OSCTUNE `Vuc ~T0 @X0 0 e@176 ]
+"5140
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 5140: extern volatile unsigned char ACTCON __attribute__((address(0x0AC)));
+[v _ACTCON `Vuc ~T0 @X0 0 e@172 ]
+"1280
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 1280: extern volatile unsigned char PMD0 __attribute__((address(0x060)));
+[v _PMD0 `Vuc ~T0 @X0 0 e@96 ]
+"1337
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 1337: extern volatile unsigned char PMD1 __attribute__((address(0x061)));
+[v _PMD1 `Vuc ~T0 @X0 0 e@97 ]
+"1399
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 1399: extern volatile unsigned char PMD3 __attribute__((address(0x063)));
+[v _PMD3 `Vuc ~T0 @X0 0 e@99 ]
+"1450
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 1450: extern volatile unsigned char PMD4 __attribute__((address(0x064)));
+[v _PMD4 `Vuc ~T0 @X0 0 e@100 ]
+"1506
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 1506: extern volatile unsigned char PMD5 __attribute__((address(0x065)));
+[v _PMD5 `Vuc ~T0 @X0 0 e@101 ]
+"1557
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 1557: extern volatile unsigned char PMD6 __attribute__((address(0x066)));
+[v _PMD6 `Vuc ~T0 @X0 0 e@102 ]
+"1619
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 1619: extern volatile unsigned char PMD7 __attribute__((address(0x067)));
+[v _PMD7 `Vuc ~T0 @X0 0 e@103 ]
+"1681
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 1681: extern volatile unsigned char PMD8 __attribute__((address(0x068)));
+[v _PMD8 `Vuc ~T0 @X0 0 e@104 ]
 "328 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 328: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2570,48 +2609,96 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49822
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 49822: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"40 main.c
-[; ;main.c: 40: uint16_t adc_read[2];
-[v _adc_read `us ~T0 @X0 -> 2 `i e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"41
-[; ;main.c: 41: int main(void)
-[v _main `(i ~T0 @X0 1 ef ]
-"42
-[; ;main.c: 42: {
+"50 mcc_generated_files/mcc.c
+[; ;mcc_generated_files/mcc.c: 50: void SYSTEM_Initialize(void)
+[v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
+"51
+[; ;mcc_generated_files/mcc.c: 51: {
 {
-[e :U _main ]
+[e :U _SYSTEM_Initialize ]
 [f ]
-"43
-[; ;main.c: 43:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
+"52
+[; ;mcc_generated_files/mcc.c: 52:     PMD_Initialize();
+[e ( _PMD_Initialize ..  ]
+"53
+[; ;mcc_generated_files/mcc.c: 53:     PIN_MANAGER_Initialize();
+[e ( _PIN_MANAGER_Initialize ..  ]
+"54
+[; ;mcc_generated_files/mcc.c: 54:     OSCILLATOR_Initialize();
+[e ( _OSCILLATOR_Initialize ..  ]
+"55
+[; ;mcc_generated_files/mcc.c: 55:     ADCC_Initialize();
+[e ( _ADCC_Initialize ..  ]
 "56
-[; ;main.c: 56:     while(1)
-[e :U 2362 ]
+[; ;mcc_generated_files/mcc.c: 56:     UART1_Initialize();
+[e ( _UART1_Initialize ..  ]
 "57
-[; ;main.c: 57:     {
-{
-"58
-[; ;main.c: 58:         adc_read[0] = ADCC_GetSingleConversion(channel_ANA0);
-[e = *U + &U _adc_read * -> -> -> 0 `i `ui `ux -> -> # *U &U _adc_read `ui `ux ( _ADCC_GetSingleConversion (1 . `E17012 5 ]
-"59
-[; ;main.c: 59:         adc_read[1] = ADCC_GetSingleConversion(channel_ANA2);
-[e = *U + &U _adc_read * -> -> -> 1 `i `ui `ux -> -> # *U &U _adc_read `ui `ux ( _ADCC_GetSingleConversion (1 . `E17012 6 ]
-"60
-[; ;main.c: 60:         printf("%c%c%c%c",0X00,adc_read[0]& 0x00ff,adc_read[0]>>8,0xFF);
-[e ( _printf , , , , (. :s 1C -> 0 `i & -> *U + &U _adc_read * -> -> -> 0 `i `ui `ux -> -> # *U &U _adc_read `ui `ux `ui -> -> 255 `i `ui >> -> *U + &U _adc_read * -> -> -> 0 `i `ui `ux -> -> # *U &U _adc_read `ui `ux `ui -> 8 `i -> 255 `i ]
-"61
-[; ;main.c: 61:         _delay((unsigned long)((200)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"63
-[; ;main.c: 63:     }
+[; ;mcc_generated_files/mcc.c: 57: }
+[e :UE 2359 ]
 }
-[e :U 2361 ]
-[e $U 2362  ]
-[e :U 2363 ]
+"59
+[; ;mcc_generated_files/mcc.c: 59: void OSCILLATOR_Initialize(void)
+[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
+"60
+[; ;mcc_generated_files/mcc.c: 60: {
+{
+[e :U _OSCILLATOR_Initialize ]
+[f ]
+"62
+[; ;mcc_generated_files/mcc.c: 62:     OSCCON1 = 0x60;
+[e = _OSCCON1 -> -> 96 `i `uc ]
 "64
-[; ;main.c: 64: }
+[; ;mcc_generated_files/mcc.c: 64:     OSCCON3 = 0x00;
+[e = _OSCCON3 -> -> 0 `i `uc ]
+"66
+[; ;mcc_generated_files/mcc.c: 66:     OSCEN = 0x00;
+[e = _OSCEN -> -> 0 `i `uc ]
+"68
+[; ;mcc_generated_files/mcc.c: 68:     OSCFRQ = 0x08;
+[e = _OSCFRQ -> -> 8 `i `uc ]
+"70
+[; ;mcc_generated_files/mcc.c: 70:     OSCTUNE = 0x00;
+[e = _OSCTUNE -> -> 0 `i `uc ]
+"72
+[; ;mcc_generated_files/mcc.c: 72:     ACTCON = 0x00;
+[e = _ACTCON -> -> 0 `i `uc ]
+"73
+[; ;mcc_generated_files/mcc.c: 73: }
 [e :UE 2360 ]
 }
-[p f _printf 8912896 ]
-[a 1C 37 99 37 99 37 99 37 99 0 ]
+"75
+[; ;mcc_generated_files/mcc.c: 75: void PMD_Initialize(void)
+[v _PMD_Initialize `(v ~T0 @X0 1 ef ]
+"76
+[; ;mcc_generated_files/mcc.c: 76: {
+{
+[e :U _PMD_Initialize ]
+[f ]
+"78
+[; ;mcc_generated_files/mcc.c: 78:     PMD0 = 0x00;
+[e = _PMD0 -> -> 0 `i `uc ]
+"80
+[; ;mcc_generated_files/mcc.c: 80:     PMD1 = 0x00;
+[e = _PMD1 -> -> 0 `i `uc ]
+"82
+[; ;mcc_generated_files/mcc.c: 82:     PMD3 = 0x00;
+[e = _PMD3 -> -> 0 `i `uc ]
+"84
+[; ;mcc_generated_files/mcc.c: 84:     PMD4 = 0x00;
+[e = _PMD4 -> -> 0 `i `uc ]
+"86
+[; ;mcc_generated_files/mcc.c: 86:     PMD5 = 0x00;
+[e = _PMD5 -> -> 0 `i `uc ]
+"88
+[; ;mcc_generated_files/mcc.c: 88:     PMD6 = 0x00;
+[e = _PMD6 -> -> 0 `i `uc ]
+"90
+[; ;mcc_generated_files/mcc.c: 90:     PMD7 = 0x00;
+[e = _PMD7 -> -> 0 `i `uc ]
+"92
+[; ;mcc_generated_files/mcc.c: 92:     PMD8 = 0x00;
+[e = _PMD8 -> -> 0 `i `uc ]
+"93
+[; ;mcc_generated_files/mcc.c: 93: }
+[e :UE 2361 ]
+}

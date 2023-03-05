@@ -1,22 +1,218 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
-"58 ./mcc_generated_files/system/../uart/../system/system.h
-[; ;./mcc_generated_files/system/../uart/../system/system.h: 58: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"58 main.c
-[; ;main.c: 58:         adc_read[0] = ADCC_GetSingleConversion(channel_ANA0);
-[c E17012 59 60 61 62 63 0 2 .. ]
-[n E17012 . channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2 channel_ANA0 channel_ANA2  ]
-"118 ./mcc_generated_files/system/../adc/adcc.h
-[; ;./mcc_generated_files/system/../adc/adcc.h: 118: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
-[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E17012 ]
-"105 C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h: 105: int printf(const char *restrict, ...);
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-[v F192 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\builtins.h
-[v __delay `JF192 ~T0 @X0 0 e ]
-[p i __delay ]
+"35199 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 35199: extern volatile unsigned char ADLTHL __attribute__((address(0x3D9)));
+[v _ADLTHL `Vuc ~T0 @X0 0 e@985 ]
+"35327
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 35327: extern volatile unsigned char ADLTHH __attribute__((address(0x3DA)));
+[v _ADLTHH `Vuc ~T0 @X0 0 e@986 ]
+"35462
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 35462: extern volatile unsigned char ADUTHL __attribute__((address(0x3DB)));
+[v _ADUTHL `Vuc ~T0 @X0 0 e@987 ]
+"35590
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 35590: extern volatile unsigned char ADUTHH __attribute__((address(0x3DC)));
+[v _ADUTHH `Vuc ~T0 @X0 0 e@988 ]
+"35988
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 35988: extern volatile unsigned char ADSTPTL __attribute__((address(0x3DF)));
+[v _ADSTPTL `Vuc ~T0 @X0 0 e@991 ]
+"36116
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 36116: extern volatile unsigned char ADSTPTH __attribute__((address(0x3E0)));
+[v _ADSTPTH `Vuc ~T0 @X0 0 e@992 ]
+"36772
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 36772: extern volatile unsigned char ADACCU __attribute__((address(0x3E5)));
+[v _ADACCU `Vuc ~T0 @X0 0 e@997 ]
+"37028
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 37028: extern volatile unsigned char ADRPT __attribute__((address(0x3E7)));
+[v _ADRPT `Vuc ~T0 @X0 0 e@999 ]
+"37674
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 37674: extern volatile unsigned char ADPCH __attribute__((address(0x3EC)));
+[v _ADPCH `Vuc ~T0 @X0 0 e@1004 ]
+"37739
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 37739: extern volatile unsigned char ADACQL __attribute__((address(0x3EE)));
+[v _ADACQL `Vuc ~T0 @X0 0 e@1006 ]
+"37867
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 37867: extern volatile unsigned char ADACQH __attribute__((address(0x3EF)));
+[v _ADACQH `Vuc ~T0 @X0 0 e@1007 ]
+"37959
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 37959: extern volatile unsigned char ADCAP __attribute__((address(0x3F0)));
+[v _ADCAP `Vuc ~T0 @X0 0 e@1008 ]
+"38018
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38018: extern volatile unsigned char ADPREL __attribute__((address(0x3F1)));
+[v _ADPREL `Vuc ~T0 @X0 0 e@1009 ]
+"38146
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38146: extern volatile unsigned char ADPREH __attribute__((address(0x3F2)));
+[v _ADPREH `Vuc ~T0 @X0 0 e@1010 ]
+"38356
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38356: extern volatile unsigned char ADCON1 __attribute__((address(0x3F4)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@1012 ]
+"38422
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38422: extern volatile unsigned char ADCON2 __attribute__((address(0x3F5)));
+[v _ADCON2 `Vuc ~T0 @X0 0 e@1013 ]
+"38564
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38564: extern volatile unsigned char ADCON3 __attribute__((address(0x3F6)));
+[v _ADCON3 `Vuc ~T0 @X0 0 e@1014 ]
+"38694
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38694: extern volatile unsigned char ADSTAT __attribute__((address(0x3F7)));
+[v _ADSTAT `Vuc ~T0 @X0 0 e@1015 ]
+"38826
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38826: extern volatile unsigned char ADREF __attribute__((address(0x3F8)));
+[v _ADREF `Vuc ~T0 @X0 0 e@1016 ]
+"38908
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38908: extern volatile unsigned char ADACT __attribute__((address(0x3F9)));
+[v _ADACT `Vuc ~T0 @X0 0 e@1017 ]
+"39012
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 39012: extern volatile unsigned char ADCLK __attribute__((address(0x3FA)));
+[v _ADCLK `Vuc ~T0 @X0 0 e@1018 ]
+"38238
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38238: extern volatile unsigned char ADCON0 __attribute__((address(0x3F3)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@1011 ]
+"113 mcc_generated_files/adcc.c
+[; ;mcc_generated_files/adcc.c: 113: void ADCC_StartConversion(adcc_channel_t channel)
+[c E16691 0 59 60 61 62 63 .. ]
+[n E16691 . Input channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"38244 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38244:     struct {
+[s S1812 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1812 . GO . FM CS . CONT ON ]
+"38253
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38253:     struct {
+[s S1813 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1813 . ADGO . ADFM ADCS . ADCONT ADON ]
+"38262
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38262:     struct {
+[s S1814 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1814 . DONE . FM0 ]
+"38267
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38267:     struct {
+[s S1815 :1 `uc 1 ]
+[n S1815 . GO_NOT_DONE ]
+"38270
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38270:     struct {
+[s S1816 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1816 . GO_nDONE . ADFM0 ]
+"38243
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38243: typedef union {
+[u S1811 `S1812 1 `S1813 1 `S1814 1 `S1815 1 `S1816 1 ]
+[n S1811 . . . . . . ]
+"38276
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38276: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x3F3)));
+[v _ADCON0bits `VS1811 ~T0 @X0 0 e@1011 ]
+"37554
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 37554: extern volatile unsigned char ADRESH __attribute__((address(0x3EB)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@1003 ]
+"37426
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 37426: extern volatile unsigned char ADRESL __attribute__((address(0x3EA)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@1002 ]
+"38570
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38570:     struct {
+[s S1826 :3 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S1826 . TMD SOI CALC ]
+"38575
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38575:     struct {
+[s S1827 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1827 . ADTMD0 ADTMD1 ADTMD2 ADSOI ADCALC0 ADCALC1 ADCALC2 ]
+"38584
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38584:     struct {
+[s S1828 :3 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S1828 . ADTMD . ADCALC ]
+"38589
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38589:     struct {
+[s S1829 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1829 . TMD0 TMD1 TMD2 . CALC0 CALC1 CALC2 ]
+"38569
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38569: typedef union {
+[u S1825 `S1826 1 `S1827 1 `S1828 1 `S1829 1 ]
+[n S1825 . . . . . ]
+"38599
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38599: extern volatile ADCON3bits_t ADCON3bits __attribute__((address(0x3F6)));
+[v _ADCON3bits `VS1825 ~T0 @X0 0 e@1014 ]
+"36900
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 36900: extern volatile unsigned char ADCNT __attribute__((address(0x3E6)));
+[v _ADCNT `Vuc ~T0 @X0 0 e@998 ]
+"38428
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38428:     struct {
+[s S1821 :3 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S1821 . MD ACLR CRS PSIS ]
+"38434
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38434:     struct {
+[s S1822 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1822 . ADMD0 ADMD1 ADMD2 ADACLR ADCRS0 ADCRS1 ADCRS2 ADPSIS ]
+"38444
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38444:     struct {
+[s S1823 :3 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S1823 . ADMD . ADCRS ]
+"38449
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38449:     struct {
+[s S1824 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1824 . MD0 MD1 MD2 . CRS0 CRS1 CRS2 ]
+"38427
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38427: typedef union {
+[u S1820 `S1821 1 `S1822 1 `S1823 1 `S1824 1 ]
+[n S1820 . . . . . ]
+"38459
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38459: extern volatile ADCON2bits_t ADCON2bits __attribute__((address(0x3F5)));
+[v _ADCON2bits `VS1820 ~T0 @X0 0 e@1013 ]
+"36644
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 36644: extern volatile unsigned char ADACCH __attribute__((address(0x3E4)));
+[v _ADACCH `Vuc ~T0 @X0 0 e@996 ]
+"36516
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 36516: extern volatile unsigned char ADACCL __attribute__((address(0x3E3)));
+[v _ADACCL `Vuc ~T0 @X0 0 e@995 ]
+"38700
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38700:     struct {
+[s S1831 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1831 . STAT . MATH LTHR UTHR AOV ]
+"38708
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38708:     struct {
+[s S1832 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1832 . ADSTAT0 ADSTAT1 ADSTAT2 . ADMATH ADLTHR ADUTHR ADAOV ]
+"38718
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38718:     struct {
+[s S1833 :3 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S1833 . ADSTAT . ADOV ]
+"38723
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38723:     struct {
+[s S1834 :1 `uc 1 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S1834 . STAT0 STAT1 STAT2 . OV ]
+"38699
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38699: typedef union {
+[u S1830 `S1831 1 `S1832 1 `S1833 1 `S1834 1 ]
+[n S1830 . . . . . ]
+"38731
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38731: extern volatile ADSTATbits_t ADSTATbits __attribute__((address(0x3F7)));
+[v _ADSTATbits `VS1830 ~T0 @X0 0 e@1015 ]
+"36379
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 36379: extern volatile unsigned char ADFLTRH __attribute__((address(0x3E2)));
+[v _ADFLTRH `Vuc ~T0 @X0 0 e@994 ]
+"36251
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 36251: extern volatile unsigned char ADFLTRL __attribute__((address(0x3E1)));
+[v _ADFLTRL `Vuc ~T0 @X0 0 e@993 ]
+"37291
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 37291: extern volatile unsigned char ADPREVH __attribute__((address(0x3E9)));
+[v _ADPREVH `Vuc ~T0 @X0 0 e@1001 ]
+"37163
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 37163: extern volatile unsigned char ADPREVL __attribute__((address(0x3E8)));
+[v _ADPREVL `Vuc ~T0 @X0 0 e@1000 ]
+"35853
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 35853: extern volatile unsigned char ADERRH __attribute__((address(0x3DE)));
+[v _ADERRH `Vuc ~T0 @X0 0 e@990 ]
+"35725
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 35725: extern volatile unsigned char ADERRL __attribute__((address(0x3DD)));
+[v _ADERRL `Vuc ~T0 @X0 0 e@989 ]
+"38362
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38362:     struct {
+[s S1818 :1 `uc 1 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1818 . DSEN . GPOL IPEN PPOL ]
+"38369
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38369:     struct {
+[s S1819 :1 `uc 1 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1819 . ADDSEN . ADGPOL ADIPEN ADPPOL ]
+"38361
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38361: typedef union {
+[u S1817 `S1818 1 `S1819 1 ]
+[n S1817 . . . ]
+"38377
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 38377: extern volatile ADCON1bits_t ADCON1bits __attribute__((address(0x3F4)));
+[v _ADCON1bits `VS1817 ~T0 @X0 0 e@1012 ]
 "328 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 328: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2570,48 +2766,571 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49822
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 49822: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"40 main.c
-[; ;main.c: 40: uint16_t adc_read[2];
-[v _adc_read `us ~T0 @X0 -> 2 `i e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"41
-[; ;main.c: 41: int main(void)
-[v _main `(i ~T0 @X0 1 ef ]
-"42
-[; ;main.c: 42: {
-{
-[e :U _main ]
-[f ]
-"43
-[; ;main.c: 43:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"56
-[; ;main.c: 56:     while(1)
-[e :U 2362 ]
-"57
-[; ;main.c: 57:     {
-{
-"58
-[; ;main.c: 58:         adc_read[0] = ADCC_GetSingleConversion(channel_ANA0);
-[e = *U + &U _adc_read * -> -> -> 0 `i `ui `ux -> -> # *U &U _adc_read `ui `ux ( _ADCC_GetSingleConversion (1 . `E17012 5 ]
-"59
-[; ;main.c: 59:         adc_read[1] = ADCC_GetSingleConversion(channel_ANA2);
-[e = *U + &U _adc_read * -> -> -> 1 `i `ui `ux -> -> # *U &U _adc_read `ui `ux ( _ADCC_GetSingleConversion (1 . `E17012 6 ]
-"60
-[; ;main.c: 60:         printf("%c%c%c%c",0X00,adc_read[0]& 0x00ff,adc_read[0]>>8,0xFF);
-[e ( _printf , , , , (. :s 1C -> 0 `i & -> *U + &U _adc_read * -> -> -> 0 `i `ui `ux -> -> # *U &U _adc_read `ui `ux `ui -> -> 255 `i `ui >> -> *U + &U _adc_read * -> -> -> 0 `i `ui `ux -> -> # *U &U _adc_read `ui `ux `ui -> 8 `i -> 255 `i ]
-"61
-[; ;main.c: 61:         _delay((unsigned long)((200)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"62 mcc_generated_files/adcc.c
+[; ;mcc_generated_files/adcc.c: 62: void ADCC_Initialize(void)
+[v _ADCC_Initialize `(v ~T0 @X0 1 ef ]
 "63
-[; ;main.c: 63:     }
+[; ;mcc_generated_files/adcc.c: 63: {
+{
+[e :U _ADCC_Initialize ]
+[f ]
+"66
+[; ;mcc_generated_files/adcc.c: 66:     ADLTHL = 0x00;
+[e = _ADLTHL -> -> 0 `i `uc ]
+"68
+[; ;mcc_generated_files/adcc.c: 68:     ADLTHH = 0x00;
+[e = _ADLTHH -> -> 0 `i `uc ]
+"70
+[; ;mcc_generated_files/adcc.c: 70:     ADUTHL = 0x00;
+[e = _ADUTHL -> -> 0 `i `uc ]
+"72
+[; ;mcc_generated_files/adcc.c: 72:     ADUTHH = 0x00;
+[e = _ADUTHH -> -> 0 `i `uc ]
+"74
+[; ;mcc_generated_files/adcc.c: 74:     ADSTPTL = 0x00;
+[e = _ADSTPTL -> -> 0 `i `uc ]
+"76
+[; ;mcc_generated_files/adcc.c: 76:     ADSTPTH = 0x00;
+[e = _ADSTPTH -> -> 0 `i `uc ]
+"78
+[; ;mcc_generated_files/adcc.c: 78:     ADACCU = 0x00;
+[e = _ADACCU -> -> 0 `i `uc ]
+"80
+[; ;mcc_generated_files/adcc.c: 80:     ADRPT = 0x00;
+[e = _ADRPT -> -> 0 `i `uc ]
+"82
+[; ;mcc_generated_files/adcc.c: 82:     ADPCH = 0x00;
+[e = _ADPCH -> -> 0 `i `uc ]
+"84
+[; ;mcc_generated_files/adcc.c: 84:     ADACQL = 0x00;
+[e = _ADACQL -> -> 0 `i `uc ]
+"86
+[; ;mcc_generated_files/adcc.c: 86:     ADACQH = 0x00;
+[e = _ADACQH -> -> 0 `i `uc ]
+"88
+[; ;mcc_generated_files/adcc.c: 88:     ADCAP = 0x00;
+[e = _ADCAP -> -> 0 `i `uc ]
+"90
+[; ;mcc_generated_files/adcc.c: 90:     ADPREL = 0x00;
+[e = _ADPREL -> -> 0 `i `uc ]
+"92
+[; ;mcc_generated_files/adcc.c: 92:     ADPREH = 0x00;
+[e = _ADPREH -> -> 0 `i `uc ]
+"94
+[; ;mcc_generated_files/adcc.c: 94:     ADCON1 = 0x00;
+[e = _ADCON1 -> -> 0 `i `uc ]
+"96
+[; ;mcc_generated_files/adcc.c: 96:     ADCON2 = 0x10;
+[e = _ADCON2 -> -> 16 `i `uc ]
+"98
+[; ;mcc_generated_files/adcc.c: 98:     ADCON3 = 0x00;
+[e = _ADCON3 -> -> 0 `i `uc ]
+"100
+[; ;mcc_generated_files/adcc.c: 100:     ADSTAT = 0x00;
+[e = _ADSTAT -> -> 0 `i `uc ]
+"102
+[; ;mcc_generated_files/adcc.c: 102:     ADREF = 0x00;
+[e = _ADREF -> -> 0 `i `uc ]
+"104
+[; ;mcc_generated_files/adcc.c: 104:     ADACT = 0x00;
+[e = _ADACT -> -> 0 `i `uc ]
+"106
+[; ;mcc_generated_files/adcc.c: 106:     ADCLK = 0x1F;
+[e = _ADCLK -> -> 31 `i `uc ]
+"108
+[; ;mcc_generated_files/adcc.c: 108:     ADCON0 = 0x84;
+[e = _ADCON0 -> -> 132 `i `uc ]
+"111
+[; ;mcc_generated_files/adcc.c: 111: }
+[e :UE 2355 ]
 }
+"113
+[; ;mcc_generated_files/adcc.c: 113: void ADCC_StartConversion(adcc_channel_t channel)
+[v _ADCC_StartConversion `(v ~T0 @X0 1 ef1`E16691 ]
+"114
+[; ;mcc_generated_files/adcc.c: 114: {
+{
+[e :U _ADCC_StartConversion ]
+"113
+[; ;mcc_generated_files/adcc.c: 113: void ADCC_StartConversion(adcc_channel_t channel)
+[v _channel `E16691 ~T0 @X0 1 r1 ]
+"114
+[; ;mcc_generated_files/adcc.c: 114: {
+[f ]
+"116
+[; ;mcc_generated_files/adcc.c: 116:     ADPCH = channel;
+[e = _ADPCH -> _channel `uc ]
+"119
+[; ;mcc_generated_files/adcc.c: 119:     ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 1 6 -> -> 1 `i `uc ]
+"122
+[; ;mcc_generated_files/adcc.c: 122:     ADCON0bits.ADGO = 1;
+[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
+"123
+[; ;mcc_generated_files/adcc.c: 123: }
+[e :UE 2356 ]
+}
+"125
+[; ;mcc_generated_files/adcc.c: 125: _Bool ADCC_IsConversionDone(void)
+[v _ADCC_IsConversionDone `(a ~T0 @X0 1 ef ]
+"126
+[; ;mcc_generated_files/adcc.c: 126: {
+{
+[e :U _ADCC_IsConversionDone ]
+[f ]
+"128
+[; ;mcc_generated_files/adcc.c: 128:     return ((unsigned char)(!ADCON0bits.ADGO));
+[e ) -> -> -> ! != -> . . _ADCON0bits 1 0 `i -> 0 `i `i `uc `a ]
+[e $UE 2357  ]
+"129
+[; ;mcc_generated_files/adcc.c: 129: }
+[e :UE 2357 ]
+}
+"131
+[; ;mcc_generated_files/adcc.c: 131: adc_result_t ADCC_GetConversionResult(void)
+[v _ADCC_GetConversionResult `(us ~T0 @X0 1 ef ]
+"132
+[; ;mcc_generated_files/adcc.c: 132: {
+{
+[e :U _ADCC_GetConversionResult ]
+[f ]
+"134
+[; ;mcc_generated_files/adcc.c: 134:     return ((adc_result_t)((ADRESH << 8) + ADRESL));
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
+[e $UE 2358  ]
+"135
+[; ;mcc_generated_files/adcc.c: 135: }
+[e :UE 2358 ]
+}
+"137
+[; ;mcc_generated_files/adcc.c: 137: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel)
+[v _ADCC_GetSingleConversion `(us ~T0 @X0 1 ef1`E16691 ]
+"138
+[; ;mcc_generated_files/adcc.c: 138: {
+{
+[e :U _ADCC_GetSingleConversion ]
+"137
+[; ;mcc_generated_files/adcc.c: 137: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel)
+[v _channel `E16691 ~T0 @X0 1 r1 ]
+"138
+[; ;mcc_generated_files/adcc.c: 138: {
+[f ]
+"140
+[; ;mcc_generated_files/adcc.c: 140:     ADPCH = channel;
+[e = _ADPCH -> _channel `uc ]
+"143
+[; ;mcc_generated_files/adcc.c: 143:     ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 1 6 -> -> 1 `i `uc ]
+"146
+[; ;mcc_generated_files/adcc.c: 146:     ADCON0bits.ADCONT = 0;
+[e = . . _ADCON0bits 1 5 -> -> 0 `i `uc ]
+"149
+[; ;mcc_generated_files/adcc.c: 149:     ADCON0bits.ADGO = 1;
+[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
+"153
+[; ;mcc_generated_files/adcc.c: 153:     while (ADCON0bits.ADGO)
+[e $U 2360  ]
 [e :U 2361 ]
-[e $U 2362  ]
-[e :U 2363 ]
-"64
-[; ;main.c: 64: }
-[e :UE 2360 ]
+"154
+[; ;mcc_generated_files/adcc.c: 154:     {
+{
+"155
+[; ;mcc_generated_files/adcc.c: 155:     }
 }
-[p f _printf 8912896 ]
-[a 1C 37 99 37 99 37 99 37 99 0 ]
+[e :U 2360 ]
+"153
+[; ;mcc_generated_files/adcc.c: 153:     while (ADCON0bits.ADGO)
+[e $ != -> . . _ADCON0bits 1 0 `i -> 0 `i 2361  ]
+[e :U 2362 ]
+"159
+[; ;mcc_generated_files/adcc.c: 159:     return ((adc_result_t)((ADRESH << 8) + ADRESL));
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
+[e $UE 2359  ]
+"160
+[; ;mcc_generated_files/adcc.c: 160: }
+[e :UE 2359 ]
+}
+"162
+[; ;mcc_generated_files/adcc.c: 162: void ADCC_StopConversion(void)
+[v _ADCC_StopConversion `(v ~T0 @X0 1 ef ]
+"163
+[; ;mcc_generated_files/adcc.c: 163: {
+{
+[e :U _ADCC_StopConversion ]
+[f ]
+"165
+[; ;mcc_generated_files/adcc.c: 165:     ADCON0bits.ADGO = 0;
+[e = . . _ADCON0bits 1 0 -> -> 0 `i `uc ]
+"166
+[; ;mcc_generated_files/adcc.c: 166: }
+[e :UE 2363 ]
+}
+"168
+[; ;mcc_generated_files/adcc.c: 168: void ADCC_SetStopOnInterrupt(void)
+[v _ADCC_SetStopOnInterrupt `(v ~T0 @X0 1 ef ]
+"169
+[; ;mcc_generated_files/adcc.c: 169: {
+{
+[e :U _ADCC_SetStopOnInterrupt ]
+[f ]
+"171
+[; ;mcc_generated_files/adcc.c: 171:     ADCON3bits.ADSOI = 1;
+[e = . . _ADCON3bits 1 3 -> -> 1 `i `uc ]
+"172
+[; ;mcc_generated_files/adcc.c: 172: }
+[e :UE 2364 ]
+}
+"174
+[; ;mcc_generated_files/adcc.c: 174: void ADCC_DischargeSampleCapacitor(void)
+[v _ADCC_DischargeSampleCapacitor `(v ~T0 @X0 1 ef ]
+"175
+[; ;mcc_generated_files/adcc.c: 175: {
+{
+[e :U _ADCC_DischargeSampleCapacitor ]
+[f ]
+"177
+[; ;mcc_generated_files/adcc.c: 177:     ADPCH = 0x3b;
+[e = _ADPCH -> -> 59 `i `uc ]
+"178
+[; ;mcc_generated_files/adcc.c: 178: }
+[e :UE 2365 ]
+}
+"180
+[; ;mcc_generated_files/adcc.c: 180: void ADCC_LoadAcquisitionRegister(uint16_t acquisitionValue)
+[v _ADCC_LoadAcquisitionRegister `(v ~T0 @X0 1 ef1`us ]
+"181
+[; ;mcc_generated_files/adcc.c: 181: {
+{
+[e :U _ADCC_LoadAcquisitionRegister ]
+"180
+[; ;mcc_generated_files/adcc.c: 180: void ADCC_LoadAcquisitionRegister(uint16_t acquisitionValue)
+[v _acquisitionValue `us ~T0 @X0 1 r1 ]
+"181
+[; ;mcc_generated_files/adcc.c: 181: {
+[f ]
+"183
+[; ;mcc_generated_files/adcc.c: 183:     ADACQH = (uint8_t) (acquisitionValue >> 8);
+[e = _ADACQH -> >> -> _acquisitionValue `ui -> 8 `i `uc ]
+"184
+[; ;mcc_generated_files/adcc.c: 184:     ADACQL = (uint8_t) acquisitionValue;
+[e = _ADACQL -> _acquisitionValue `uc ]
+"185
+[; ;mcc_generated_files/adcc.c: 185: }
+[e :UE 2366 ]
+}
+"187
+[; ;mcc_generated_files/adcc.c: 187: void ADCC_SetPrechargeTime(uint16_t prechargeTime)
+[v _ADCC_SetPrechargeTime `(v ~T0 @X0 1 ef1`us ]
+"188
+[; ;mcc_generated_files/adcc.c: 188: {
+{
+[e :U _ADCC_SetPrechargeTime ]
+"187
+[; ;mcc_generated_files/adcc.c: 187: void ADCC_SetPrechargeTime(uint16_t prechargeTime)
+[v _prechargeTime `us ~T0 @X0 1 r1 ]
+"188
+[; ;mcc_generated_files/adcc.c: 188: {
+[f ]
+"190
+[; ;mcc_generated_files/adcc.c: 190:     ADPREH = (uint8_t) (prechargeTime >> 8);
+[e = _ADPREH -> >> -> _prechargeTime `ui -> 8 `i `uc ]
+"191
+[; ;mcc_generated_files/adcc.c: 191:     ADPREL = (uint8_t) prechargeTime;
+[e = _ADPREL -> _prechargeTime `uc ]
+"192
+[; ;mcc_generated_files/adcc.c: 192: }
+[e :UE 2367 ]
+}
+"194
+[; ;mcc_generated_files/adcc.c: 194: void ADCC_SetRepeatCount(uint8_t repeatCount)
+[v _ADCC_SetRepeatCount `(v ~T0 @X0 1 ef1`uc ]
+"195
+[; ;mcc_generated_files/adcc.c: 195: {
+{
+[e :U _ADCC_SetRepeatCount ]
+"194
+[; ;mcc_generated_files/adcc.c: 194: void ADCC_SetRepeatCount(uint8_t repeatCount)
+[v _repeatCount `uc ~T0 @X0 1 r1 ]
+"195
+[; ;mcc_generated_files/adcc.c: 195: {
+[f ]
+"197
+[; ;mcc_generated_files/adcc.c: 197:     ADRPT = repeatCount;
+[e = _ADRPT _repeatCount ]
+"198
+[; ;mcc_generated_files/adcc.c: 198: }
+[e :UE 2368 ]
+}
+"200
+[; ;mcc_generated_files/adcc.c: 200: uint8_t ADCC_GetCurrentCountofConversions(void)
+[v _ADCC_GetCurrentCountofConversions `(uc ~T0 @X0 1 ef ]
+"201
+[; ;mcc_generated_files/adcc.c: 201: {
+{
+[e :U _ADCC_GetCurrentCountofConversions ]
+[f ]
+"203
+[; ;mcc_generated_files/adcc.c: 203:     return ADCNT;
+[e ) _ADCNT ]
+[e $UE 2369  ]
+"204
+[; ;mcc_generated_files/adcc.c: 204: }
+[e :UE 2369 ]
+}
+"206
+[; ;mcc_generated_files/adcc.c: 206: void ADCC_ClearAccumulator(void)
+[v _ADCC_ClearAccumulator `(v ~T0 @X0 1 ef ]
+"207
+[; ;mcc_generated_files/adcc.c: 207: {
+{
+[e :U _ADCC_ClearAccumulator ]
+[f ]
+"209
+[; ;mcc_generated_files/adcc.c: 209:     ADCON2bits.ADACLR = 1;
+[e = . . _ADCON2bits 1 3 -> -> 1 `i `uc ]
+"210
+[; ;mcc_generated_files/adcc.c: 210: }
+[e :UE 2370 ]
+}
+"212
+[; ;mcc_generated_files/adcc.c: 212: uint24_t ADCC_GetAccumulatorValue(void)
+[v _ADCC_GetAccumulatorValue `(um ~T0 @X0 1 ef ]
+"213
+[; ;mcc_generated_files/adcc.c: 213: {
+{
+[e :U _ADCC_GetAccumulatorValue ]
+[f ]
+"215
+[; ;mcc_generated_files/adcc.c: 215:     return (((uint24_t)ADACCU << 16)+((uint24_t)ADACCH << 8) + ADACCL);
+[e ) + + << -> _ADACCU `um -> 16 `i << -> _ADACCH `um -> 8 `i -> _ADACCL `um ]
+[e $UE 2371  ]
+"216
+[; ;mcc_generated_files/adcc.c: 216: }
+[e :UE 2371 ]
+}
+"218
+[; ;mcc_generated_files/adcc.c: 218: _Bool ADCC_HasAccumulatorOverflowed(void)
+[v _ADCC_HasAccumulatorOverflowed `(a ~T0 @X0 1 ef ]
+"219
+[; ;mcc_generated_files/adcc.c: 219: {
+{
+[e :U _ADCC_HasAccumulatorOverflowed ]
+[f ]
+"221
+[; ;mcc_generated_files/adcc.c: 221:     return ADSTATbits.ADAOV;
+[e ) -> . . _ADSTATbits 1 7 `a ]
+[e $UE 2372  ]
+"222
+[; ;mcc_generated_files/adcc.c: 222: }
+[e :UE 2372 ]
+}
+"224
+[; ;mcc_generated_files/adcc.c: 224: uint16_t ADCC_GetFilterValue(void)
+[v _ADCC_GetFilterValue `(us ~T0 @X0 1 ef ]
+"225
+[; ;mcc_generated_files/adcc.c: 225: {
+{
+[e :U _ADCC_GetFilterValue ]
+[f ]
+"227
+[; ;mcc_generated_files/adcc.c: 227:     return ((uint16_t)((ADFLTRH << 8) + ADFLTRL));
+[e ) -> + << -> _ADFLTRH `i -> 8 `i -> _ADFLTRL `i `us ]
+[e $UE 2373  ]
+"228
+[; ;mcc_generated_files/adcc.c: 228: }
+[e :UE 2373 ]
+}
+"230
+[; ;mcc_generated_files/adcc.c: 230: uint16_t ADCC_GetPreviousResult(void)
+[v _ADCC_GetPreviousResult `(us ~T0 @X0 1 ef ]
+"231
+[; ;mcc_generated_files/adcc.c: 231: {
+{
+[e :U _ADCC_GetPreviousResult ]
+[f ]
+"233
+[; ;mcc_generated_files/adcc.c: 233:     return ((uint16_t)((ADPREVH << 8) + ADPREVL));
+[e ) -> + << -> _ADPREVH `i -> 8 `i -> _ADPREVL `i `us ]
+[e $UE 2374  ]
+"234
+[; ;mcc_generated_files/adcc.c: 234: }
+[e :UE 2374 ]
+}
+"236
+[; ;mcc_generated_files/adcc.c: 236: void ADCC_DefineSetPoint(uint16_t setPoint)
+[v _ADCC_DefineSetPoint `(v ~T0 @X0 1 ef1`us ]
+"237
+[; ;mcc_generated_files/adcc.c: 237: {
+{
+[e :U _ADCC_DefineSetPoint ]
+"236
+[; ;mcc_generated_files/adcc.c: 236: void ADCC_DefineSetPoint(uint16_t setPoint)
+[v _setPoint `us ~T0 @X0 1 r1 ]
+"237
+[; ;mcc_generated_files/adcc.c: 237: {
+[f ]
+"239
+[; ;mcc_generated_files/adcc.c: 239:     ADSTPTH = (uint8_t) (setPoint >> 8);
+[e = _ADSTPTH -> >> -> _setPoint `ui -> 8 `i `uc ]
+"240
+[; ;mcc_generated_files/adcc.c: 240:     ADSTPTL = (uint8_t) setPoint;
+[e = _ADSTPTL -> _setPoint `uc ]
+"241
+[; ;mcc_generated_files/adcc.c: 241: }
+[e :UE 2375 ]
+}
+"243
+[; ;mcc_generated_files/adcc.c: 243: void ADCC_SetUpperThreshold(uint16_t upperThreshold)
+[v _ADCC_SetUpperThreshold `(v ~T0 @X0 1 ef1`us ]
+"244
+[; ;mcc_generated_files/adcc.c: 244: {
+{
+[e :U _ADCC_SetUpperThreshold ]
+"243
+[; ;mcc_generated_files/adcc.c: 243: void ADCC_SetUpperThreshold(uint16_t upperThreshold)
+[v _upperThreshold `us ~T0 @X0 1 r1 ]
+"244
+[; ;mcc_generated_files/adcc.c: 244: {
+[f ]
+"246
+[; ;mcc_generated_files/adcc.c: 246:     ADUTHH = (uint8_t) (upperThreshold >> 8);
+[e = _ADUTHH -> >> -> _upperThreshold `ui -> 8 `i `uc ]
+"247
+[; ;mcc_generated_files/adcc.c: 247:     ADUTHL = (uint8_t) (upperThreshold);
+[e = _ADUTHL -> _upperThreshold `uc ]
+"248
+[; ;mcc_generated_files/adcc.c: 248: }
+[e :UE 2376 ]
+}
+"250
+[; ;mcc_generated_files/adcc.c: 250: void ADCC_SetLowerThreshold(uint16_t lowerThreshold)
+[v _ADCC_SetLowerThreshold `(v ~T0 @X0 1 ef1`us ]
+"251
+[; ;mcc_generated_files/adcc.c: 251: {
+{
+[e :U _ADCC_SetLowerThreshold ]
+"250
+[; ;mcc_generated_files/adcc.c: 250: void ADCC_SetLowerThreshold(uint16_t lowerThreshold)
+[v _lowerThreshold `us ~T0 @X0 1 r1 ]
+"251
+[; ;mcc_generated_files/adcc.c: 251: {
+[f ]
+"253
+[; ;mcc_generated_files/adcc.c: 253:     ADLTHH = (uint8_t) (lowerThreshold >> 8);
+[e = _ADLTHH -> >> -> _lowerThreshold `ui -> 8 `i `uc ]
+"254
+[; ;mcc_generated_files/adcc.c: 254:     ADLTHL = (uint8_t) lowerThreshold;
+[e = _ADLTHL -> _lowerThreshold `uc ]
+"255
+[; ;mcc_generated_files/adcc.c: 255: }
+[e :UE 2377 ]
+}
+"257
+[; ;mcc_generated_files/adcc.c: 257: uint16_t ADCC_GetErrorCalculation(void)
+[v _ADCC_GetErrorCalculation `(us ~T0 @X0 1 ef ]
+"258
+[; ;mcc_generated_files/adcc.c: 258: {
+{
+[e :U _ADCC_GetErrorCalculation ]
+[f ]
+"260
+[; ;mcc_generated_files/adcc.c: 260:  return ((uint16_t)((ADERRH << 8) + ADERRL));
+[e ) -> + << -> _ADERRH `i -> 8 `i -> _ADERRL `i `us ]
+[e $UE 2378  ]
+"261
+[; ;mcc_generated_files/adcc.c: 261: }
+[e :UE 2378 ]
+}
+"263
+[; ;mcc_generated_files/adcc.c: 263: void ADCC_EnableDoubleSampling(void)
+[v _ADCC_EnableDoubleSampling `(v ~T0 @X0 1 ef ]
+"264
+[; ;mcc_generated_files/adcc.c: 264: {
+{
+[e :U _ADCC_EnableDoubleSampling ]
+[f ]
+"266
+[; ;mcc_generated_files/adcc.c: 266:     ADCON1bits.ADDSEN = 1;
+[e = . . _ADCON1bits 1 0 -> -> 1 `i `uc ]
+"267
+[; ;mcc_generated_files/adcc.c: 267: }
+[e :UE 2379 ]
+}
+"269
+[; ;mcc_generated_files/adcc.c: 269: void ADCC_EnableContinuousConversion(void)
+[v _ADCC_EnableContinuousConversion `(v ~T0 @X0 1 ef ]
+"270
+[; ;mcc_generated_files/adcc.c: 270: {
+{
+[e :U _ADCC_EnableContinuousConversion ]
+[f ]
+"272
+[; ;mcc_generated_files/adcc.c: 272:     ADCON0bits.ADCONT = 1;
+[e = . . _ADCON0bits 1 5 -> -> 1 `i `uc ]
+"273
+[; ;mcc_generated_files/adcc.c: 273: }
+[e :UE 2380 ]
+}
+"275
+[; ;mcc_generated_files/adcc.c: 275: void ADCC_DisableContinuousConversion(void)
+[v _ADCC_DisableContinuousConversion `(v ~T0 @X0 1 ef ]
+"276
+[; ;mcc_generated_files/adcc.c: 276: {
+{
+[e :U _ADCC_DisableContinuousConversion ]
+[f ]
+"278
+[; ;mcc_generated_files/adcc.c: 278:     ADCON0bits.ADCONT = 0;
+[e = . . _ADCON0bits 1 5 -> -> 0 `i `uc ]
+"279
+[; ;mcc_generated_files/adcc.c: 279: }
+[e :UE 2381 ]
+}
+"281
+[; ;mcc_generated_files/adcc.c: 281: _Bool ADCC_HasErrorCrossedUpperThreshold(void)
+[v _ADCC_HasErrorCrossedUpperThreshold `(a ~T0 @X0 1 ef ]
+"282
+[; ;mcc_generated_files/adcc.c: 282: {
+{
+[e :U _ADCC_HasErrorCrossedUpperThreshold ]
+[f ]
+"284
+[; ;mcc_generated_files/adcc.c: 284:     return ADSTATbits.ADUTHR;
+[e ) -> . . _ADSTATbits 1 6 `a ]
+[e $UE 2382  ]
+"285
+[; ;mcc_generated_files/adcc.c: 285: }
+[e :UE 2382 ]
+}
+"287
+[; ;mcc_generated_files/adcc.c: 287: _Bool ADCC_HasErrorCrossedLowerThreshold(void)
+[v _ADCC_HasErrorCrossedLowerThreshold `(a ~T0 @X0 1 ef ]
+"288
+[; ;mcc_generated_files/adcc.c: 288: {
+{
+[e :U _ADCC_HasErrorCrossedLowerThreshold ]
+[f ]
+"290
+[; ;mcc_generated_files/adcc.c: 290:     return ADSTATbits.ADLTHR;
+[e ) -> . . _ADSTATbits 1 5 `a ]
+[e $UE 2383  ]
+"291
+[; ;mcc_generated_files/adcc.c: 291: }
+[e :UE 2383 ]
+}
+"293
+[; ;mcc_generated_files/adcc.c: 293: uint8_t ADCC_GetConversionStageStatus(void)
+[v _ADCC_GetConversionStageStatus `(uc ~T0 @X0 1 ef ]
+"294
+[; ;mcc_generated_files/adcc.c: 294: {
+{
+[e :U _ADCC_GetConversionStageStatus ]
+[f ]
+"296
+[; ;mcc_generated_files/adcc.c: 296:     return ADSTATbits.ADSTAT;
+[e ) . . _ADSTATbits 2 0 ]
+[e $UE 2384  ]
+"297
+[; ;mcc_generated_files/adcc.c: 297: }
+[e :UE 2384 ]
+}

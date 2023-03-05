@@ -1,15 +1,15 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"58 ./mcc_generated_files/system/../uart/../system/system.h
-[; ;./mcc_generated_files/system/../uart/../system/system.h: 58: void SYSTEM_Initialize(void);
+"71 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 71: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"58 main.c
-[; ;main.c: 58:         adc_read[0] = ADCC_GetSingleConversion(channel_ANA0);
-[c E17012 59 60 61 62 63 0 2 .. ]
-[n E17012 . channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2 channel_ANA0 channel_ANA2  ]
-"118 ./mcc_generated_files/system/../adc/adcc.h
-[; ;./mcc_generated_files/system/../adc/adcc.h: 118: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
-[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E17012 ]
+"70 main.c
+[; ;main.c: 70:         value = ADCC_GetSingleConversion(Input);
+[c E17011 0 59 60 61 62 63 .. ]
+[n E17011 . Input channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"253 ./mcc_generated_files/adcc.h
+[; ;./mcc_generated_files/adcc.h: 253: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E17011 ]
 "105 C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h: 105: int printf(const char *restrict, ...);
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
@@ -2570,48 +2570,48 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49822
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h: 49822: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"40 main.c
-[; ;main.c: 40: uint16_t adc_read[2];
+"51 main.c
+[; ;main.c: 51: uint16_t adc_read[2];
 [v _adc_read `us ~T0 @X0 -> 2 `i e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"41
-[; ;main.c: 41: int main(void)
-[v _main `(i ~T0 @X0 1 ef ]
-"42
-[; ;main.c: 42: {
+"52
+[; ;main.c: 52: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"53
+[; ;main.c: 53: {
 {
 [e :U _main ]
 [f ]
-"43
-[; ;main.c: 43:     SYSTEM_Initialize();
+"55
+[; ;main.c: 55:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"56
-[; ;main.c: 56:     while(1)
-[e :U 2362 ]
-"57
-[; ;main.c: 57:     {
-{
-"58
-[; ;main.c: 58:         adc_read[0] = ADCC_GetSingleConversion(channel_ANA0);
-[e = *U + &U _adc_read * -> -> -> 0 `i `ui `ux -> -> # *U &U _adc_read `ui `ux ( _ADCC_GetSingleConversion (1 . `E17012 5 ]
-"59
-[; ;main.c: 59:         adc_read[1] = ADCC_GetSingleConversion(channel_ANA2);
-[e = *U + &U _adc_read * -> -> -> 1 `i `ui `ux -> -> # *U &U _adc_read `ui `ux ( _ADCC_GetSingleConversion (1 . `E17012 6 ]
-"60
-[; ;main.c: 60:         printf("%c%c%c%c",0X00,adc_read[0]& 0x00ff,adc_read[0]>>8,0xFF);
-[e ( _printf , , , , (. :s 1C -> 0 `i & -> *U + &U _adc_read * -> -> -> 0 `i `ui `ux -> -> # *U &U _adc_read `ui `ux `ui -> -> 255 `i `ui >> -> *U + &U _adc_read * -> -> -> 0 `i `ui `ux -> -> # *U &U _adc_read `ui `ux `ui -> 8 `i -> 255 `i ]
-"61
-[; ;main.c: 61:         _delay((unsigned long)((200)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"63
-[; ;main.c: 63:     }
-}
+"66
+[; ;main.c: 66:     uint16_t value;
+[v _value `us ~T0 @X0 1 a ]
+"67
+[; ;main.c: 67:     while (1)
 [e :U 2361 ]
-[e $U 2362  ]
-[e :U 2363 ]
-"64
-[; ;main.c: 64: }
-[e :UE 2360 ]
+"68
+[; ;main.c: 68:     {
+{
+"70
+[; ;main.c: 70:         value = ADCC_GetSingleConversion(Input);
+[e = _value ( _ADCC_GetSingleConversion (1 . `E17011 0 ]
+"72
+[; ;main.c: 72:         printf("%c%c%c%c",0X00,value & 0x00ff,value>>8,0xFF);
+[e ( _printf , , , , (. :s 1C -> 0 `i & -> _value `ui -> -> 255 `i `ui >> -> _value `ui -> 8 `i -> 255 `i ]
+"74
+[; ;main.c: 74:         _delay((unsigned long)((100)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"75
+[; ;main.c: 75:     }
+}
+[e :U 2360 ]
+[e $U 2361  ]
+[e :U 2362 ]
+"76
+[; ;main.c: 76: }
+[e :UE 2359 ]
 }
 [p f _printf 8912896 ]
 [a 1C 37 99 37 99 37 99 37 99 0 ]

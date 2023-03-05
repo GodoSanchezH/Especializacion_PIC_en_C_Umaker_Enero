@@ -57,7 +57,7 @@ int main(void)
     {
         adc_read[0] = ADCC_GetSingleConversion(channel_ANA0);
         adc_read[1] = ADCC_GetSingleConversion(channel_ANA2);
-        printf("%c%c%c%c%c%c",InicioTrama,adc_read[0]& 0x00ff,adc_read[0]>>8,adc_read[1]& 0x00ff,adc_read[1]>>8,FintTrama);
+        printf("%c%c%c%c",InicioTrama,adc_read[0]& 0x00ff,adc_read[0]>>8,FintTrama);
         __delay_ms(200);
         
     }    
